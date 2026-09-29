@@ -1,10 +1,11 @@
 /**
- * oms-web-interactive-example-api-custom - Lógica Interactiva y Simulador
+ * oms-web-interactive-example-api-custom - Lógica Interactiva y Simulador Strapi v5
  */
 
 const STORAGE_KEY = "oms-api-lab-progress";
 const DATA_KEY = "oms-api-lab-orders-data";
 const COOKIE_KEY = "oms-api-lab-cookie";
+const QUIZ_KEY = "oms-api-lab-quiz-score";
 const TOTAL_CHECKPOINTS = 8;
 const INITIAL_SECONDS = 30 * 60; // 30 minutos
 
@@ -43,20 +44,20 @@ const INITIAL_ORDERS = [
 ];
 
 const ESQUEMA_OMS = {
-  entidad: "oms_orden_servicio",
-  descripcion: "Expediente u orden de servicio operativo en el sistema OMS",
+  entidad: "oms_ordenes",
+  descripcion: "Expediente u orden de servicio operativo en el sistema OMS (Strapi v5)",
   version: "1.0.0",
   campos: {
-    codigo: { tipo: "string", descripcion: "Código correlativo único", requerido: false, generado: true },
+    codigo: { tipo: "string", descripcion: "Código correlativo único generado por Strapi", requerido: false, generado: true },
     cliente: { tipo: "string", descripcion: "Nombre del titular o solicitante", requerido: true, minLength: 3 },
-    servicio: { tipo: "string", enum: ["inspeccion_sanitaria", "certificacion_bpm", "auditoria_calidad", "control_aduanero"], requerido: true },
-    prioridad: { tipo: "string", enum: ["baja", "media", "alta", "urgente"], default: "media" },
-    monto: { tipo: "number", descripcion: "Monto base antes de impuestos (GTQ)", min: 1, requerido: true },
-    impuesto: { tipo: "number", descripcion: "IVA (12% calculado)", generado: true },
-    total: { tipo: "number", descripcion: "Total neto calculado", generado: true },
-    estado: { tipo: "string", enum: ["borrador", "en_revision", "aprobado", "rechazado", "completado"], default: "borrador" },
+    servicio: { tipo: "enumeration", enum: ["inspeccion_sanitaria", "certificacion_bpm", "auditoria_calidad", "control_aduanero"], requerido: true },
+    prioridad: { tipo: "enumeration", enum: ["baja", "media", "alta", "urgente"], default: "media" },
+    monto: { tipo: "decimal", descripcion: "Monto base antes de impuestos (GTQ)", min: 1, requerido: true },
+    impuesto: { tipo: "decimal", descripcion: "IVA (12% calculado por el servicio)", generado: true },
+    total: { tipo: "decimal", descripcion: "Total neto calculado", generado: true },
+    estado: { tipo: "enumeration", enum: ["borrador", "en_revision", "aprobado", "rechazado", "completado"], default: "borrador" },
     operador: { tipo: "string", descripcion: "Usuario que registra la orden", requerido: true },
-    metadata: { tipo: "jsonb", descripcion: "Campos flexibles y normalización legacy" }
+    metadata: { tipo: "json", descripcion: "Campos flexibles y normalización legacy (JSONB)" }
   }
 };
 
@@ -108,7 +109,7 @@ function writeStorage(key, val) {
   try {
     localStorage.setItem(key, JSON.stringify(val));
   } catch {
-    // Modo privado o storage restringido
+    // Storage restringido
   }
 }
 
@@ -118,7 +119,6 @@ function showToast(msg) {
   setTimeout(() => toast.classList.remove("is-visible"), 2600);
 }
 
-// Inicializar datos en storage si está vacío
 if (!readStorage(DATA_KEY, null)) {
   writeStorage(DATA_KEY, INITIAL_ORDERS);
 }
@@ -159,8 +159,8 @@ function pauseTimer() {
   timerToggle.title = "Iniciar cronómetro";
 }
 
-timerToggle.addEventListener("click", () => (timerInterval ? pauseTimer() : startTimer()));
-timerReset.addEventListener("click", () => {
+timerToggle?.addEventListener("click", () => (timerInterval ? pauseTimer() : startTimer()));
+timerReset?.addEventListener("click", () => {
   pauseTimer();
   secondsLeft = INITIAL_SECONDS;
   renderTimer();
@@ -173,8 +173,8 @@ timerReset.addEventListener("click", () => {
 function updateProgressUI() {
   completedSteps = [...new Set(completedSteps)].sort((a, b) => a - b);
   const pct = Math.round((completedSteps.length / TOTAL_CHECKPOINTS) * 100);
-  progressBar.style.width = `${pct}%`;
-  progressPercent.textContent = `${pct}% (${completedSteps.length}/${TOTAL_CHECKPOINTS})`;
+  if (progressBar) progressBar.style.width = `${pct}%`;
+  if (progressPercent) progressPercent.textContent = `${pct}% (${completedSteps.length}/${TOTAL_CHECKPOINTS})`;
 
   document.querySelectorAll("[data-checkpoint-id]").forEach((item) => {
     const id = Number(item.dataset.checkpointId);
@@ -206,7 +206,7 @@ document.querySelectorAll("[data-checkpoint-toggle]").forEach((btn) => {
    ======================================================== */
 document.querySelector("#btnProjectorMode")?.addEventListener("click", () => {
   const isProj = document.body.classList.toggle("projector-mode");
-  showToast(isProj ? "Modo Proyector activado (Fondo claro de alto contraste)" : "Modo Cyber activado");
+  showToast(isProj ? "Modo Proyector activado (Fondo claro de alto contraste)" : "Modo Cyber Strapi activado");
 });
 
 document.querySelector("#btnFocusMode")?.addEventListener("click", () => {
@@ -219,39 +219,48 @@ document.querySelector("#btnFocusMode")?.addEventListener("click", () => {
    ======================================================== */
 const PRESETS = {
   validPost: {
-    cliente: "Laboratorios Farmacéuticos del Altiplano",
-    servicio: "certificacion_bpm",
-    monto: 15000.0,
-    prioridad: "alta",
-    operador: "fernando.perez",
-    metadata: { departamento: "Sacatepéquez", expedienteLegacy: "EXP-9821-BPM" }
+    data: {
+      cliente: "Laboratorios Farmacéuticos del Altiplano",
+      servicio: "certificacion_bpm",
+      monto: 15000.0,
+      prioridad: "alta",
+      operador: "fernando.perez",
+      metadata: { departamento: "Sacatepéquez", expedienteLegacy: "EXP-9821-BPM" }
+    }
   },
   attackDto: {
-    cliente: "Auditoría Sanitaria Express",
-    servicio: "inspeccion_sanitaria",
-    monto: 4000.0,
-    prioridad: "media",
-    operador: "hacker.demo",
-    // Ataque de inyección de parámetros (El DTO debe descartar esto)
-    esAdmin: true,
-    estado: "aprobado",
-    total: 0.05,
-    descuentoIlegal: 9999
+    data: {
+      cliente: "Auditoría Sanitaria Express",
+      servicio: "inspeccion_sanitaria",
+      monto: 4000.0,
+      prioridad: "media",
+      operador: "hacker.demo",
+      esAdmin: true,
+      estado: "aprobado",
+      total: 0.05,
+      descuentoIlegal: 9999
+    }
   },
   invalid400: {
-    cliente: "X", // Inválido: menor a 3 caracteres
-    servicio: "servicio_no_autorizado", // Inválido: no está en el enum
-    monto: -50.0 // Inválido: negativo
+    data: {
+      cliente: "X",
+      servicio: "servicio_no_autorizado",
+      monto: -50.0
+    }
   },
   validPatch: {
-    prioridad: "urgente",
-    monto: 18000.0
+    data: {
+      prioridad: "urgente",
+      monto: 18000.0
+    }
   },
   previewOms: {
-    cliente: "Hospital General San Juan",
-    servicio: "auditoria_calidad",
-    monto: 22000.0,
-    prioridad: "alta"
+    data: {
+      cliente: "Hospital General San Juan",
+      servicio: "auditoria_calidad",
+      monto: 22000.0,
+      prioridad: "alta"
+    }
   }
 };
 
@@ -275,7 +284,7 @@ document.querySelectorAll("[data-preset]").forEach((btn) => {
   });
 });
 
-endpointSelect.addEventListener("change", () => {
+endpointSelect?.addEventListener("change", () => {
   const ep = endpointSelect.value;
   if (ep === "/health" || ep === "/api/v1/oms/ordenes/schema" || ep === "/api/v1/oms/ordenes/sesion" || ep === "/api/v1/oms/ordenes") {
     if (methodSelect.value !== "POST") {
@@ -288,7 +297,7 @@ endpointSelect.addEventListener("change", () => {
 });
 
 /* ========================================================
-   MOTOR DEL SIMULADOR VISUAL (PIPELINE ANIMADO)
+   MOTOR DEL SIMULADOR VISUAL (STRAPI PIPELINE)
    ======================================================== */
 function clearPipeline() {
   Object.values(nodes).forEach((n) => {
@@ -299,8 +308,10 @@ function clearPipeline() {
 }
 
 function logTrace(msg) {
-  terminalOutput.textContent += `\n${msg}`;
-  terminalOutput.scrollTop = terminalOutput.scrollHeight;
+  if (terminalOutput) {
+    terminalOutput.textContent += `\n${msg}`;
+    terminalOutput.scrollTop = terminalOutput.scrollHeight;
+  }
 }
 
 function escapeHtml(str) {
@@ -334,109 +345,111 @@ function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-btnSend.addEventListener("click", async () => {
+btnSend?.addEventListener("click", async () => {
   const method = methodSelect.value;
   const endpoint = endpointSelect.value;
-  let bodyJson = null;
+  let rawBody = null;
 
   if (["POST", "PATCH"].includes(method)) {
     try {
-      bodyJson = JSON.parse(payloadTextarea.value || "{}");
+      rawBody = JSON.parse(payloadTextarea.value || "{}");
     } catch {
       showToast("Error: El cuerpo de la petición no es JSON válido");
       return;
     }
   }
 
+  // Normalización Strapi: getPayload(ctx)
+  const bodyJson = rawBody?.data ?? rawBody ?? {};
+
   btnSend.disabled = true;
   clearPipeline();
-  terminalOutput.textContent = `>>> [${new Date().toLocaleTimeString()}] INICIANDO PETICIÓN HTTP: ${method} ${endpoint}`;
-  responseOutput.innerHTML = '<span style="color:#64748b;">// Procesando flujo de datos por las capas de Node.js...</span>';
+  terminalOutput.textContent = `>>> [${new Date().toLocaleTimeString()}] PETICIÓN ENTRANTE: ${method} ${endpoint}`;
+  responseOutput.innerHTML = '<span style="color:#64748b;">// Procesando flujo de datos en Strapi v5 (Koa Engine)...</span>';
   statusBadge.textContent = "...";
   statusBadge.className = "badge-status";
 
   // PASO 1: Cliente emite petición
-  nodes.client.classList.add("is-active");
-  logTrace(`[1. CLIENTE] Socket TCP abierto. Enviando cabeceras y payload.`);
-  await wait(300);
+  nodes.client?.classList.add("is-active");
+  logTrace(`[1. CLIENTE] Socket TCP abierto. Enviando cabeceras y payload con formato Strapi.`);
+  await wait(280);
 
-  // PASO 2: Middlewares globales (express.json, cookieParser, SemVer)
-  nodes.client.classList.remove("is-active");
-  nodes.middleware.classList.add("is-active");
-  logTrace(`[2. MIDDLEWARES] express.json() parsea body. SemVer añade header 'X-API-Version: 1.0.0'.`);
-  await wait(300);
+  // PASO 2: Strapi Global Middlewares
+  nodes.client?.classList.remove("is-active");
+  nodes.middleware?.classList.add("is-active");
+  logTrace(`[2. STRAPI MIDDLEWARES] CORS activo. Body Parser decodifica JSON y asigna ctx.request.body.`);
+  await wait(280);
 
-  // PASO 3: Router
-  nodes.middleware.classList.remove("is-active");
-  nodes.router.classList.add("is-active");
-  logTrace(`[3. ENRUTADOR] express.Router() resuelve coincidencia: ${method} ${endpoint}`);
-  await wait(300);
+  // PASO 3: Router Strapi
+  nodes.middleware?.classList.remove("is-active");
+  nodes.router?.classList.add("is-active");
+  logTrace(`[3. ENRUTADOR STRAPI] Resolviendo ruta en routes/custom-orden.js: ${method} ${endpoint}`);
+  await wait(280);
 
-  // PASO 4: Validador (si aplica)
-  let hayErrorValidacion = false;
+  // PASO 4: Validador
   let listaErrores = [];
-
   if (method === "POST" && endpoint === "/api/v1/oms/ordenes") {
-    nodes.router.classList.remove("is-active");
-    nodes.validator.classList.add("is-active");
-    logTrace(`[4. VALIDADOR] express-validator inspecciona restricciones de tipos y formato...`);
+    nodes.router?.classList.remove("is-active");
+    nodes.validator?.classList.add("is-active");
+    logTrace(`[4. VALIDADOR] Verificando restricciones del Content-Type schema.json...`);
 
     if (!bodyJson.cliente || String(bodyJson.cliente).trim().length < 3) {
-      listaErrores.push({ campo: "cliente", mensaje: "El nombre del cliente debe tener al menos 3 caracteres" });
+      listaErrores.push({ campo: "cliente", mensaje: "El nombre del cliente debe tener al menos 3 caracteres (minLength: 3 en schema.json)" });
     }
     const serviciosValidos = ["inspeccion_sanitaria", "certificacion_bpm", "auditoria_calidad", "control_aduanero"];
     if (!bodyJson.servicio || !serviciosValidos.includes(bodyJson.servicio)) {
-      listaErrores.push({ campo: "servicio", mensaje: `Servicio inválido. Permitidos: ${serviciosValidos.join(", ")}` });
+      listaErrores.push({ campo: "servicio", mensaje: `Servicio inválido. Enumeration permitida: ${serviciosValidos.join(", ")}` });
     }
     if (bodyJson.monto === undefined || Number(bodyJson.monto) < 1) {
-      listaErrores.push({ campo: "monto", mensaje: "El monto debe ser un número positivo mayor o igual a 1.00" });
+      listaErrores.push({ campo: "monto", mensaje: "El monto debe ser un decimal positivo mayor o igual a 1.00" });
     }
 
     if (listaErrores.length > 0) {
-      hayErrorValidacion = true;
-      nodes.validator.classList.remove("is-active");
-      nodes.validator.classList.add("is-error");
-      logTrace(`[4. VALIDADOR ERROR] Se detectaron ${listaErrores.length} fallos. Retornando 400 Bad Request.`);
+      nodes.validator?.classList.remove("is-active");
+      nodes.validator?.classList.add("is-error");
+      logTrace(`[4. VALIDADOR ERROR] Se detectaron ${listaErrores.length} fallos. Strapi emite 400 Bad Request.`);
 
       await wait(300);
       statusBadge.textContent = "400 BAD REQUEST";
       statusBadge.className = "badge-status is-400";
       responseOutput.innerHTML = highlightJson({
-        error: "Validación fallida",
-        mensaje: "Los datos enviados no cumplen con el formato o las restricciones de la API",
-        errores: listaErrores
+        error: {
+          message: "Validación fallida en Strapi",
+          details: listaErrores,
+          statusCode: 400
+        }
       });
       btnSend.disabled = false;
       return;
     }
   }
 
-  // PASO 5: Controlador
-  nodes.validator.classList.remove("is-active");
-  nodes.router.classList.remove("is-active");
-  nodes.controller.classList.add("is-active");
-  logTrace(`[5. CONTROLADOR] OrdenController recibe req.body y req.params.`);
-  await wait(300);
+  // PASO 5: Controlador Koa (ctx)
+  nodes.validator?.classList.remove("is-active");
+  nodes.router?.classList.remove("is-active");
+  nodes.controller?.classList.add("is-active");
+  logTrace(`[5. CONTROLADOR STRAPI] controllers/custom-orden.js recibe ctx. getPayload(ctx) extrae data.`);
+  await wait(280);
 
-  // PASO 6: DTO (Sanitización y Whitelist)
-  nodes.controller.classList.remove("is-active");
-  nodes.dto.classList.add("is-active");
-  logTrace(`[6. DTO DE SEGURIDAD] Instanciando DTO. Whitelist activa: eliminando atributos no autorizados.`);
-  await wait(300);
+  // PASO 6: DTO (Sanitización)
+  nodes.controller?.classList.remove("is-active");
+  nodes.dto?.classList.add("is-active");
+  logTrace(`[6. DTO WHITELIST] Instanciando CrearOrdenDTO. Limpiando strings y descartando atributos maliciosos.`);
+  await wait(280);
 
-  // PASO 7: Servicio (Reglas OMS)
-  nodes.dto.classList.remove("is-active");
-  nodes.service.classList.add("is-active");
-  logTrace(`[7. SERVICIO OMS] OrdenService ejecuta lógica de negocio, cálculo de IVA (12%) y reglas de estado.`);
-  await wait(300);
+  // PASO 7: Servicio Custom OMS
+  nodes.dto?.classList.remove("is-active");
+  nodes.service?.classList.add("is-active");
+  logTrace(`[7. SERVICIO STRAPI] strapi.service('api::orden.custom-orden') calcula IVA 12% y reglas OMS.`);
+  await wait(280);
 
-  // PASO 8: Modelo / Bóveda
-  nodes.service.classList.remove("is-active");
-  nodes.model.classList.add("is-active");
-  logTrace(`[8. REPOSITORIO/MODELO] Acceso a la capa de datos.`);
-  await wait(300);
+  // PASO 8: Modelo / DB
+  nodes.service?.classList.remove("is-active");
+  nodes.model?.classList.add("is-active");
+  logTrace(`[8. REPOSITORIO / POSTGRESQL] Persistencia sobre la colección 'oms_ordenes'.`);
+  await wait(280);
 
-  // CONSTRUIR RESPUESTA SEGÚN EL ENDPOINT
+  // Construcción de respuesta
   let statusCode = 200;
   let responseData = null;
   const db = readStorage(DATA_KEY, INITIAL_ORDERS);
@@ -446,8 +459,8 @@ btnSend.addEventListener("click", async () => {
     responseData = {
       estado: "operativo",
       version: "1.0.0",
+      motor: "Strapi v5 + Node.js ESM",
       servicio: "oms-custom-api-example",
-      uptimeSegundos: 450,
       timestamp: new Date().toISOString()
     };
   } else if (endpoint === "/api/v1/oms/ordenes/schema") {
@@ -466,7 +479,8 @@ btnSend.addEventListener("click", async () => {
     const iva = Number((subtotal * 0.12).toFixed(2));
     responseData = {
       simulacion: true,
-      mensaje: "Cálculo previo ejecutado con éxito (sin escribir en base de datos)",
+      motor: "Strapi v5 OMS Service",
+      mensaje: "Cálculo previo ejecutado con éxito (sin escribir en PostgreSQL)",
       totalesCalculados: {
         montoBase: subtotal,
         tasaIva: "12%",
@@ -495,7 +509,6 @@ btnSend.addEventListener("click", async () => {
     const total = Number((subtotal + impuesto).toFixed(2));
     const operador = String(bodyJson.operador || "carlos.mendoza").trim().toLowerCase();
 
-    // DTO sanitiza descartando campos maliciosos
     const nueva = {
       id: `ord-${Date.now().toString(16).slice(-6)}`,
       codigo: `ORD-2026-${String(db.length + 1).padStart(3, "0")}`,
@@ -515,17 +528,17 @@ btnSend.addEventListener("click", async () => {
     db.unshift(nueva);
     writeStorage(DATA_KEY, db);
     writeStorage(COOKIE_KEY, operador);
-    cookieBadge.textContent = `ultimoOperador=${operador}; HttpOnly; SameSite=Lax`;
+    if (cookieBadge) cookieBadge.textContent = `ultimoOperador=${operador}; HttpOnly; SameSite=Lax`;
 
     responseData = {
-      mensaje: "Orden de servicio creada exitosamente en el sistema OMS",
+      mensaje: "Orden de servicio creada exitosamente en Strapi OMS",
       data: nueva
     };
   } else if (endpoint === "/api/v1/oms/ordenes/:id") {
     const orden = db[0];
     if (!orden) {
       statusCode = 404;
-      responseData = { error: "No se encontró la orden solicitada", codigoHttp: 404 };
+      responseData = { error: { message: "No se encontró la orden solicitada en Strapi", statusCode: 404 } };
     } else if (method === "GET") {
       statusCode = 200;
       responseData = { data: orden };
@@ -549,27 +562,26 @@ btnSend.addEventListener("click", async () => {
       writeStorage(DATA_KEY, db);
       statusCode = 200;
       responseData = {
-        mensaje: "Orden actualizada correctamente",
+        mensaje: "Orden actualizada correctamente en Strapi",
         data: updated
       };
     }
   }
 
-  // Finalizar animación
-  nodes.model.classList.remove("is-active");
-  nodes.controller.classList.add("is-active");
+  nodes.model?.classList.remove("is-active");
+  nodes.controller?.classList.add("is-active");
   await wait(200);
-  nodes.controller.classList.remove("is-active");
-  nodes.client.classList.add("is-active");
-  logTrace(`[RESPUESTA] Socket emite HTTP ${statusCode}. Headers: X-API-Version: 1.0.0.`);
+  nodes.controller?.classList.remove("is-active");
+  nodes.client?.classList.add("is-active");
+  logTrace(`[RESPUESTA] Strapi asignó ctx.body con HTTP ${statusCode}. Headers: X-API-Version: 1.0.0.`);
   await wait(200);
-  nodes.client.classList.remove("is-active");
+  nodes.client?.classList.remove("is-active");
 
   statusBadge.textContent = `${statusCode} ${statusCode === 201 ? "CREATED" : statusCode === 204 ? "NO CONTENT" : statusCode === 404 ? "NOT FOUND" : "OK"}`;
   statusBadge.className = `badge-status is-${statusCode}`;
 
   if (statusCode === 204) {
-    responseOutput.innerHTML = '<span style="color:#64748b;">// 204 No Content: La orden fue dada de baja con éxito.</span>';
+    responseOutput.innerHTML = '<span style="color:#64748b;">// 204 No Content: La orden fue eliminada de Strapi con éxito.</span>';
   } else {
     responseOutput.innerHTML = highlightJson(responseData);
   }
@@ -586,7 +598,6 @@ document.querySelectorAll(".code-line[data-desc]").forEach((line) => {
     const drawer = parentCard?.nextElementSibling;
     if (!drawer || !drawer.classList.contains("line-explainer-drawer")) return;
 
-    // Deseleccionar previas
     parentCard.querySelectorAll(".code-line").forEach((l) => l.classList.remove("is-selected"));
     line.classList.add("is-selected");
 
@@ -594,7 +605,7 @@ document.querySelectorAll(".code-line[data-desc]").forEach((line) => {
     const titleEl = drawer.querySelector(".line-explainer-title");
     const bodyEl = drawer.querySelector(".line-explainer-body");
 
-    if (titleEl) titleEl.innerHTML = `<span>🔎 Explicación de la Línea ${lineNum}</span>`;
+    if (titleEl) titleEl.innerHTML = `<span>🔎 Explicación de la Línea ${lineNum} (Strapi v5)</span>`;
     if (bodyEl) bodyEl.innerHTML = line.dataset.desc;
 
     drawer.classList.add("is-visible");
@@ -602,8 +613,223 @@ document.querySelectorAll(".code-line[data-desc]").forEach((line) => {
 });
 
 /* ========================================================
-   BUSCADOR DEL GLOSARIO
+   NUEVO: GENERADOR DE CÓDIGO PARA NUEVA API STRAPI
    ======================================================== */
+const scaffolderForm = {
+  name: document.querySelector("#scaffoldName"),
+  plural: document.querySelector("#scaffoldPlural"),
+  table: document.querySelector("#scaffoldTable"),
+  output: document.querySelector("#scaffoldOutput"),
+  btnGen: document.querySelector("#btnGenerateScaffold"),
+  tabButtons: document.querySelectorAll("[data-scaffold-tab]")
+};
+
+let currentScaffoldData = {
+  singular: "documento",
+  plural: "documentos",
+  table: "oms_documentos"
+};
+
+let currentActiveTab = "schema";
+
+function generateStrapiFiles(singular, plural, table) {
+  const capSingular = singular.charAt(0).toUpperCase() + singular.slice(1);
+
+  return {
+    schema: JSON.stringify({
+      kind: "collectionType",
+      collectionName: table,
+      info: {
+        singularName: singular,
+        pluralName: plural,
+        displayName: `${capSingular} OMS`,
+        description: `Módulo operativo de ${plural} en OMS`
+      },
+      options: { draftAndPublish: false },
+      attributes: {
+        codigo: { type: "string", unique: true, required: true },
+        descripcion: { type: "text", required: true },
+        monto: { type: "decimal", required: true },
+        estado: { type: "enumeration", enum: ["borrador", "activo", "cerrado"], default: "borrador" },
+        metadata: { type: "json" }
+      }
+    }, null, 2),
+
+    routes: `export default {
+  routes: [
+    { method: "GET", path: "/${plural}/schema", handler: "custom-${singular}.schema", config: { auth: false } },
+    { method: "POST", path: "/${plural}/preview", handler: "custom-${singular}.preview", config: { auth: false } },
+    { method: "GET", path: "/${plural}", handler: "custom-${singular}.list", config: { auth: false } },
+    { method: "GET", path: "/${plural}/:id", handler: "custom-${singular}.findOne", config: { auth: false } },
+    { method: "POST", path: "/${plural}", handler: "custom-${singular}.create", config: { auth: false } },
+    { method: "PATCH", path: "/${plural}/:id", handler: "custom-${singular}.update", config: { auth: false } },
+    { method: "DELETE", path: "/${plural}/:id", handler: "custom-${singular}.delete", config: { auth: false } }
+  ]
+};`,
+
+    controller: `const getCustomService = (strapi) => strapi.service("api::${singular}.custom-${singular}");
+const getPayload = (ctx) => ctx.request.body?.data ?? ctx.request.body ?? {};
+
+export default ({ strapi }) => ({
+  async schema(ctx) {
+    ctx.body = { data: getCustomService(strapi).schema() };
+  },
+
+  async preview(ctx) {
+    ctx.body = await getCustomService(strapi).preview(getPayload(ctx));
+  },
+
+  async list(ctx) {
+    const data = await getCustomService(strapi).list(ctx.query ?? {});
+    ctx.body = { total: data.length, data };
+  },
+
+  async findOne(ctx) {
+    const item = await getCustomService(strapi).findOne(ctx.params.id);
+    ctx.body = { data: item };
+  },
+
+  async create(ctx) {
+    const item = await getCustomService(strapi).create(getPayload(ctx));
+    ctx.status = 201;
+    ctx.body = { mensaje: "${capSingular} creado con éxito en Strapi", data: item };
+  },
+
+  async update(ctx) {
+    const item = await getCustomService(strapi).update(ctx.params.id, getPayload(ctx));
+    ctx.body = { mensaje: "${capSingular} actualizado", data: item };
+  },
+
+  async delete(ctx) {
+    await getCustomService(strapi).delete(ctx.params.id);
+    ctx.status = 204;
+    ctx.body = null;
+  }
+});`,
+
+    service: `export default ({ strapi }) => ({
+  schema() {
+    return { entidad: "${table}", version: "1.0.0" };
+  },
+
+  preview(payload) {
+    const monto = Number(payload.monto || 0);
+    return {
+      simulacion: true,
+      totalesCalculados: {
+        montoBase: monto,
+        impuesto: Number((monto * 0.12).toFixed(2)),
+        total: Number((monto * 1.12).toFixed(2))
+      }
+    };
+  },
+
+  async list(query = {}) {
+    return await strapi.db.query("api::${singular}.${singular}").findMany({ where: query });
+  },
+
+  async findOne(id) {
+    return await strapi.db.query("api::${singular}.${singular}").findOne({ where: { id } });
+  },
+
+  async create(payload) {
+    return await strapi.db.query("api::${singular}.${singular}").create({ data: payload });
+  },
+
+  async update(id, payload) {
+    return await strapi.db.query("api::${singular}.${singular}").update({ where: { id }, data: payload });
+  },
+
+  async delete(id) {
+    return await strapi.db.query("api::${singular}.${singular}").delete({ where: { id } });
+  }
+});`
+  };
+}
+
+function renderScaffoldView() {
+  const files = generateStrapiFiles(currentScaffoldData.singular, currentScaffoldData.plural, currentScaffoldData.table);
+  if (scaffolderForm.output) {
+    scaffolderForm.output.textContent = files[currentActiveTab] || files.schema;
+  }
+}
+
+scaffolderForm.name?.addEventListener("input", (e) => {
+  const singular = e.target.value.trim().toLowerCase() || "item";
+  currentScaffoldData.singular = singular;
+  currentScaffoldData.plural = `${singular}s`;
+  currentScaffoldData.table = `oms_${singular}s`;
+  if (scaffolderForm.plural) scaffolderForm.plural.value = currentScaffoldData.plural;
+  if (scaffolderForm.table) scaffolderForm.table.value = currentScaffoldData.table;
+  renderScaffoldView();
+});
+
+scaffolderForm.tabButtons?.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    scaffolderForm.tabButtons.forEach((t) => t.classList.remove("is-active"));
+    tab.classList.add("is-active");
+    currentActiveTab = tab.dataset.scaffoldTab;
+    renderScaffoldView();
+  });
+});
+
+document.querySelector("#btnCopyScaffold")?.addEventListener("click", () => {
+  if (scaffolderForm.output) {
+    navigator.clipboard.writeText(scaffolderForm.output.textContent).then(() => {
+      showToast("¡Código Strapi copiado al portapapeles!");
+    });
+  }
+});
+
+/* ========================================================
+   NUEVO: QUIZ INTERACTIVO PARA ALUMNOS
+   ======================================================== */
+let quizScore = readStorage(QUIZ_KEY, 0);
+
+document.querySelectorAll(".quiz-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const parentCard = btn.closest(".quiz-card");
+    const isCorrect = btn.dataset.correct === "true";
+    const feedback = parentCard.querySelector(".quiz-feedback");
+
+    // Desactivar botones de esa pregunta
+    parentCard.querySelectorAll(".quiz-btn").forEach((b) => {
+      b.disabled = true;
+      if (b.dataset.correct === "true") b.classList.add("is-correct");
+    });
+
+    if (isCorrect) {
+      btn.classList.add("is-correct");
+      if (feedback) {
+        feedback.innerHTML = '<span style="color:var(--accent-green); font-weight:700;">¡Correcto! 🎉</span> ' + btn.dataset.reason;
+        feedback.classList.add("is-visible");
+      }
+      quizScore++;
+      writeStorage(QUIZ_KEY, quizScore);
+      showToast(`¡Respuesta correcta! Puntaje: ${quizScore}`);
+    } else {
+      btn.classList.add("is-incorrect");
+      if (feedback) {
+        feedback.innerHTML = '<span style="color:var(--accent-rose); font-weight:700;">Incorrecto.</span> ' + btn.dataset.reason;
+        feedback.classList.add("is-visible");
+      }
+      showToast("Respuesta incorrecta. Revisa la explicación.");
+    }
+  });
+});
+
+/* ========================================================
+   BUSCADORES DE CHULETA Y GLOSARIO
+   ======================================================== */
+const cheatsheetInput = document.querySelector("#cheatsheetInput");
+cheatsheetInput?.addEventListener("input", (e) => {
+  const query = e.target.value.toLowerCase().trim();
+  document.querySelectorAll(".cheatsheet-table tbody tr").forEach((tr) => {
+    const text = tr.textContent.toLowerCase();
+    tr.style.display = text.includes(query) ? "" : "none";
+  });
+});
+
 const glossaryInput = document.querySelector("#glossaryInput");
 glossaryInput?.addEventListener("input", (e) => {
   const query = e.target.value.toLowerCase().trim();
@@ -613,16 +839,13 @@ glossaryInput?.addEventListener("input", (e) => {
   });
 });
 
-/* ========================================================
-   BOTONES DE COPIAR CÓDIGO
-   ======================================================== */
+// Botones de copiado
 document.querySelectorAll("[data-copy-target]").forEach((btn) => {
   btn.addEventListener("click", () => {
     const targetId = btn.dataset.copyTarget;
     const codeEl = document.querySelector(targetId);
     if (!codeEl) return;
 
-    // Extraer solo el texto del código ignorando comentarios o números
     const lines = Array.from(codeEl.querySelectorAll(".code-line__code"))
       .map((c) => c.innerText)
       .join("\n");
@@ -642,10 +865,11 @@ document.querySelectorAll("[data-copy-target]").forEach((btn) => {
   });
 });
 
-// Inicialización de la UI
+// Inicialización
 renderTimer();
 updateProgressUI();
+renderScaffoldView();
 const savedCookie = readStorage(COOKIE_KEY, null);
-if (savedCookie) {
+if (savedCookie && cookieBadge) {
   cookieBadge.textContent = `ultimoOperador=${savedCookie}; HttpOnly; SameSite=Lax`;
 }
