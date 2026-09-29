@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oms_ordenes",
+  "info": {
+    "singularName": "orden",
+    "pluralName": "ordenes",
+    "displayName": "Orden de Servicio OMS",
+    "description": "Expedientes y órdenes operativas del sistema OMS"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
+    "cliente": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 120
+    },
+    "servicio": {
+      "type": "enumeration",
+      "enum": [
+        "inspeccion_sanitaria",
+        "certificacion_bpm",
+        "auditoria_calidad",
+        "control_aduanero"
+      ],
+      "required": true
+    },
+    "prioridad": {
+      "type": "enumeration",
+      "enum": [
+        "baja",
+        "media",
+        "alta",
+        "urgente"
+      ],
+      "default": "media"
+    },
+    "monto": {
+      "type": "decimal",
+      "required": true
+    },
+    "impuesto": {
+      "type": "decimal",
+      "required": false
+    },
+    "total": {
+      "type": "decimal",
+      "required": false
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "borrador",
+        "en_revision",
+        "aprobado",
+        "rechazado",
+        "completado"
+      ],
+      "default": "borrador"
+    },
+    "operador": {
+      "type": "string",
+      "required": true
+    },
+    "metadata": {
+      "type": "json"
+    }
+  }
+}
