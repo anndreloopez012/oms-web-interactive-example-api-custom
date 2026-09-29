@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OMS · Laboratorio Interactivo de Creación de APIs Custom</title>
-  <meta name="description" content="Guía interactiva y visual para aprender a construir APIs REST empresariales en Node.js y Express con arquitectura OMS, DTOs, validaciones y pruebas.">
+  <title>OMS · Laboratorio Interactivo: Creación de APIs Custom en Strapi v5 & Node.js</title>
+  <meta name="description" content="Guía interactiva y visual para dominar la creación de Custom APIs en Strapi v5 con arquitectura desacoplada por capas: schema.json, routes, controllers (ctx), services, DTOs y validaciones.">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
       <a href="#inicio" class="brand">
         <div class="brand__logo">OMS</div>
         <div>
-          <div class="brand__title">Custom API Architecture Lab</div>
+          <div class="brand__title">Strapi Custom API Architecture Lab</div>
         </div>
-        <span class="brand__badge">v1.0.0 SemVer</span>
+        <span class="brand__badge">Strapi v5 · ESM</span>
       </a>
 
       <!-- Cronómetro 30 Minutos -->
@@ -61,76 +61,76 @@
           <li>
             <a href="#inicio" class="nav-item is-active" data-checkpoint-id="0">
               <span class="nav-item__checkbox">✓</span>
-              <span>00. Misión & Arquitectura</span>
+              <span>00. Arquitectura Strapi en OMS</span>
             </a>
           </li>
           <li>
             <a href="#simulador" class="nav-item">
               <span class="nav-item__checkbox">⚡</span>
-              <span>Simulador de Ciclo de Vida</span>
+              <span>Simulador del Ciclo Strapi</span>
             </a>
           </li>
           <li>
             <a href="#por-que-archivos" class="nav-item">
               <span class="nav-item__checkbox">📁</span>
-              <span>¿Por qué de cada archivo?</span>
+              <span>Estructura `src/api/<nombre>`</span>
             </a>
           </li>
           <li>
             <a href="#cp-01" class="nav-item" data-checkpoint-id="1">
               <span class="nav-item__checkbox">✓</span>
-              <span>01. Express, SemVer & Server</span>
+              <span>01. Content-Type Schema (schema.json)</span>
             </a>
           </li>
           <li>
             <a href="#cp-02" class="nav-item" data-checkpoint-id="2">
               <span class="nav-item__checkbox">✓</span>
-              <span>02. DTOs & Seguridad Estricta</span>
+              <span>02. Rutas Core vs Rutas Custom</span>
             </a>
           </li>
           <li>
             <a href="#cp-03" class="nav-item" data-checkpoint-id="3">
               <span class="nav-item__checkbox">✓</span>
-              <span>03. Validaciones Declarativas</span>
+              <span>03. Controlador Strapi & Koa Context (ctx)</span>
             </a>
           </li>
           <li>
             <a href="#cp-04" class="nav-item" data-checkpoint-id="4">
               <span class="nav-item__checkbox">✓</span>
-              <span>04. Modelo & Persistencia</span>
+              <span>04. DTOs & Sanitización de Payloads</span>
             </a>
           </li>
           <li>
             <a href="#cp-05" class="nav-item" data-checkpoint-id="5">
               <span class="nav-item__checkbox">✓</span>
-              <span>05. Servicio & Custom OMS</span>
+              <span>05. Servicios Strapi (strapi.service)</span>
             </a>
           </li>
           <li>
             <a href="#cp-06" class="nav-item" data-checkpoint-id="6">
               <span class="nav-item__checkbox">✓</span>
-              <span>06. Controlador & Rutas</span>
+              <span>06. Endpoints Custom OMS (/preview, /schema)</span>
             </a>
           </li>
           <li>
             <a href="#cp-07" class="nav-item" data-checkpoint-id="7">
               <span class="nav-item__checkbox">✓</span>
-              <span>07. Pruebas Automatizadas</span>
+              <span>07. Pruebas Automatizadas (node:test)</span>
             </a>
           </li>
           <li>
             <a href="#glosario" class="nav-item">
               <span class="nav-item__checkbox">📖</span>
-              <span>Glosario Node para Alumnos</span>
+              <span>Glosario Strapi & Node para Alumnos</span>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="sidebar__card">
-        <h3>Patrón Empresarial OMS</h3>
+      <div class="sidebar__card" style="border-left: 3px solid #7c3aed;">
+        <h3 style="color:#a78bfa;">Base del Backend OMS</h3>
         <p style="font-size:0.78rem; color:var(--text-muted); line-height:1.5;">
-          Basado en la arquitectura real de backend de <strong>OMS (Operations Management System)</strong>, donde cada módulo expone endpoints custom (<code>/preview</code>, <code>/schema</code>), normalización DTO y controladores desacoplados.
+          Este laboratorio replica fielmente los patrones utilizados en <code>oms-backend</code> (Strapi v5 + TypeScript / Node.js), donde cada API se ubica en <code>src/api/&lt;nombre&gt;</code> y expone endpoints especializados con separación estricta de responsabilidades.
         </p>
       </div>
     </aside>
@@ -140,20 +140,20 @@
 
       <!-- Hero Section -->
       <section id="inicio" class="hero">
-        <div class="hero__badge">⚡ GUÍA PRÁCTICA DE ARQUITECTURA BACKEND · 30 MIN</div>
-        <h1 class="hero__title">Construye una API Customizada <span>Nivel Enterprise</span></h1>
+        <div class="hero__badge">🚀 STRAPI v5 ENTERPRISE LAB · 30 MIN · OMS BACKEND BLUEPRINT</div>
+        <h1 class="hero__title">Aprende a Crear <span>Custom APIs en Strapi</span></h1>
         <p class="hero__desc">
-          Aprende el ciclo de vida completo de una petición HTTP en Node.js y Express mediante la construcción de un servicio de órdenes para el sistema <strong>OMS</strong>. Comprenderás qué hace cada archivo, por qué se separa cada capa y qué significa cada palabra clave de Node línea por línea.
+          Domina la estructura exacta que utilizamos en <strong>OMS Backend</strong> para crear APIs personalizadas: definición de Content-Types en <code>schema.json</code>, enrutadores core y custom, controladores Koa con <code>ctx</code>, servicios de negocio desacoplados con <code>strapi.service</code>, DTOs de seguridad y endpoints de simulación (<code>/preview</code>) e introspección (<code>/schema</code>).
         </p>
 
         <div class="hero__metrics">
           <div class="metric-pill">
-            <div class="metric-pill__val">8 Capas</div>
-            <div class="metric-pill__label">Arquitectura Desacoplada</div>
+            <div class="metric-pill__val">Strapi v5</div>
+            <div class="metric-pill__label">Estructura src/api/&lt;nombre&gt;</div>
           </div>
           <div class="metric-pill">
-            <div class="metric-pill__val">100% Nativo</div>
-            <div class="metric-pill__label">node:test sin dependencias pesadas</div>
+            <div class="metric-pill__val">Koa Context</div>
+            <div class="metric-pill__label">ctx.request.body & ctx.body</div>
           </div>
           <div class="metric-pill">
             <div class="metric-pill__val">Custom OMS</div>
@@ -161,19 +161,19 @@
           </div>
           <div class="metric-pill">
             <div class="metric-pill__val">DTO Whitelist</div>
-            <div class="metric-pill__label">Defensa contra inyección de datos</div>
+            <div class="metric-pill__label">Defensa contra Mass Assignment</div>
           </div>
         </div>
       </section>
 
       <!-- ========================================================
-           SIMULADOR GRÁFICO INTERACTIVO DEL CICLO DE VIDA
+           SIMULADOR GRÁFICO INTERACTIVO DEL CICLO STRAPI
            ======================================================== -->
       <section id="simulador" class="simulator-panel">
         <div class="simulator-header">
           <div>
             <div class="checkpoint-index">SIMULADOR EN TIEMPO REAL</div>
-            <h2>🎮 Visualizador Gráfico del Ciclo de Vida HTTP</h2>
+            <h2>🎮 Visualizador Gráfico del Ciclo de Vida en Strapi</h2>
           </div>
           <div style="font-size:0.85rem; color:var(--text-muted);">
             Cookie activa de Operador: <strong id="cookieBadge" style="color:var(--accent-cyan); font-family:var(--font-mono);">ninguna</strong>
@@ -181,11 +181,11 @@
         </div>
 
         <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1.5rem;">
-          Observa cómo viaja un paquete de red a través de cada capa del servidor. Al presionar <strong>"Enviar Petición"</strong>, cada nodo se iluminará en secuencia mientras se ejecutan middlewares, validaciones con <code>express-validator</code>, filtrado DTO y cálculo de impuestos.
+          Observa cómo viaja un paquete de red a través de las capas internas de Strapi. Al presionar <strong>"Enviar Petición"</strong>, cada nodo se iluminará en secuencia mientras se ejecutan middlewares globales, enrutadores personalizados, controladores Koa con <code>ctx</code>, validación DTO y el servicio de negocio.
         </p>
 
-        <!-- Pipeline Gráfico de Nodos -->
-        <div class="pipeline-flow" id="pipelineContainer" aria-label="Diagrama del flujo de la petición">
+        <!-- Pipeline Gráfico de Nodos Strapi -->
+        <div class="pipeline-flow" id="pipelineContainer" aria-label="Diagrama del flujo de la petición Strapi">
           <div class="pipeline-node" id="nodeClient">
             <span class="pipeline-node__icon">💻</span>
             <span class="pipeline-node__title">1. Cliente</span>
@@ -194,37 +194,37 @@
           <div class="pipeline-node" id="nodeMiddleware">
             <span class="pipeline-node__icon">⚙️</span>
             <span class="pipeline-node__title">2. Middlewares</span>
-            <span class="pipeline-node__file">json / SemVer / CORS</span>
+            <span class="pipeline-node__file">Strapi Global Stack</span>
           </div>
           <div class="pipeline-node" id="nodeRouter">
             <span class="pipeline-node__icon">🚦</span>
             <span class="pipeline-node__title">3. Enrutador</span>
-            <span class="pipeline-node__file">orden.routes.js</span>
+            <span class="pipeline-node__file">routes/custom-orden.js</span>
           </div>
           <div class="pipeline-node" id="nodeValidator">
             <span class="pipeline-node__icon">🛡️</span>
             <span class="pipeline-node__title">4. Validador</span>
-            <span class="pipeline-node__file">express-validator</span>
+            <span class="pipeline-node__file">express/strapi-validator</span>
           </div>
           <div class="pipeline-node" id="nodeController">
             <span class="pipeline-node__icon">🎮</span>
             <span class="pipeline-node__title">5. Controlador</span>
-            <span class="pipeline-node__file">orden.controller.js</span>
+            <span class="pipeline-node__file">controllers/custom-orden.js (ctx)</span>
           </div>
           <div class="pipeline-node" id="nodeDto">
             <span class="pipeline-node__icon">🧹</span>
             <span class="pipeline-node__title">6. DTO</span>
-            <span class="pipeline-node__file">orden.dto.js</span>
+            <span class="pipeline-node__file">dtos/orden.dto.js</span>
           </div>
           <div class="pipeline-node" id="nodeService">
             <span class="pipeline-node__icon">🧠</span>
             <span class="pipeline-node__title">7. Servicio</span>
-            <span class="pipeline-node__file">orden.service.js</span>
+            <span class="pipeline-node__file">services/custom-orden.js</span>
           </div>
           <div class="pipeline-node" id="nodeModel">
             <span class="pipeline-node__icon">💾</span>
-            <span class="pipeline-node__title">8. Repositorio</span>
-            <span class="pipeline-node__file">orden.model.js</span>
+            <span class="pipeline-node__title">8. Repositorio / DB</span>
+            <span class="pipeline-node__file">content-types/schema.json</span>
           </div>
         </div>
 
@@ -238,14 +238,14 @@
           </select>
 
           <select id="simEndpoint" class="select-custom">
-            <option value="/api/v1/oms/ordenes" selected>POST /api/v1/oms/ordenes (Crear orden con DTO e IVA)</option>
-            <option value="/api/v1/oms/ordenes/preview">POST /api/v1/oms/ordenes/preview (Simulación previa sin guardar en BD)</option>
-            <option value="/api/v1/oms/ordenes/schema">GET /api/v1/oms/ordenes/schema (Introspección dinámica del esquema)</option>
-            <option value="/api/v1/oms/ordenes">GET /api/v1/oms/ordenes (Listar todas las órdenes)</option>
-            <option value="/api/v1/oms/ordenes/:id">GET /api/v1/oms/ordenes/:id (Detalle de la primera orden)</option>
-            <option value="/api/v1/oms/ordenes/:id">PATCH /api/v1/oms/ordenes/:id (Actualizar monto o prioridad)</option>
-            <option value="/api/v1/oms/ordenes/:id">DELETE /api/v1/oms/ordenes/:id (Dar de baja orden - 204)</option>
-            <option value="/api/v1/oms/ordenes/sesion">GET /api/v1/oms/ordenes/sesion (Auditoría: leer cookie ultimoOperador)</option>
+            <option value="/api/v1/oms/ordenes" selected>POST /api/ordenes (Crear orden en Strapi con DTO e IVA)</option>
+            <option value="/api/v1/oms/ordenes/preview">POST /api/ordenes/preview (Dry-Run: Simulación previa sin escribir en PostgreSQL)</option>
+            <option value="/api/v1/oms/ordenes/schema">GET /api/ordenes/schema (Introspección dinámica del Content-Type)</option>
+            <option value="/api/v1/oms/ordenes">GET /api/ordenes (Listar todas las órdenes con filtros)</option>
+            <option value="/api/v1/oms/ordenes/:id">GET /api/ordenes/:id (Detalle de una orden por ID)</option>
+            <option value="/api/v1/oms/ordenes/:id">PATCH /api/ordenes/:id (Actualizar monto o prioridad con DTO)</option>
+            <option value="/api/v1/oms/ordenes/:id">DELETE /api/ordenes/:id (Dar de baja orden en Strapi - 204)</option>
+            <option value="/api/v1/oms/ordenes/sesion">GET /api/ordenes/sesion (Auditoría: leer cookie ultimoOperador)</option>
             <option value="/health">GET /health (Estado y SemVer)</option>
           </select>
 
@@ -257,7 +257,7 @@
         <!-- Editor de Payload con Presets pedagógicos -->
         <div class="payload-editor">
           <div class="payload-toolbar">
-            <span>Cuerpo de la Petición (Request Body JSON):</span>
+            <span>Cuerpo de la Petición (Request Body JSON estilo Strapi con { "data": { ... } } o plano):</span>
             <div class="payload-presets">
               <button type="button" class="btn-preset" data-preset="validPost">✓ Válido (Crear)</button>
               <button type="button" class="btn-preset" data-preset="attackDto">⚠️ Probar Ataque DTO</button>
@@ -267,185 +267,159 @@
             </div>
           </div>
           <textarea id="simPayload" class="payload-textarea" spellcheck="false">{
-  "cliente": "Laboratorios Farmacéuticos del Altiplano",
-  "servicio": "certificacion_bpm",
-  "monto": 15000.0,
-  "prioridad": "alta",
-  "operador": "fernando.perez",
-  "metadata": {
-    "departamento": "Sacatepéquez",
-    "expedienteLegacy": "EXP-9821-BPM"
+  "data": {
+    "cliente": "Laboratorios Farmacéuticos del Altiplano",
+    "servicio": "certificacion_bpm",
+    "monto": 15000.0,
+    "prioridad": "alta",
+    "operador": "fernando.perez",
+    "metadata": {
+      "departamento": "Sacatepéquez",
+      "expedienteLegacy": "EXP-9821-BPM"
+    }
   }
 }</textarea>
         </div>
 
         <!-- Salidas del Simulador (Terminal y JSON) -->
         <div class="sim-grid-output">
-          <!-- Terminal de Trazabilidad -->
           <div class="terminal-box">
             <div class="terminal-box__bar">
-              <span>🖥️ TRAZA DE EJECUCIÓN (NODE.JS EVENT LOOP)</span>
+              <span>🖥️ TRAZA DE EJECUCIÓN (STRAPI KOA ENGINE)</span>
               <span>STREAM EN VIVO</span>
             </div>
             <div class="terminal-box__content" id="terminalOutput">
->>> Servidor listo. Selecciona una ruta y presiona 'Enviar Petición' para observar el recorrido por las capas.
+>>> Servidor Strapi listo. Selecciona una ruta y presiona 'Enviar Petición' para observar el recorrido por las capas.
             </div>
           </div>
 
-          <!-- Respuesta HTTP Formateada -->
           <div class="terminal-box">
             <div class="terminal-box__bar">
-              <span>📦 RESPUESTA HTTP</span>
+              <span>📦 RESPUESTA HTTP (ctx.body)</span>
               <span id="statusBadge" class="badge-status is-200">200 OK</span>
             </div>
             <div class="terminal-box__content" id="responseOutput">
-<span style="color:#64748b;">// Aquí aparecerán los encabezados (X-API-Version, Set-Cookie) y el JSON de respuesta.</span>
+<span style="color:#64748b;">// Aquí aparecerán los encabezados (X-API-Version, Set-Cookie) y el JSON asignado a ctx.body.</span>
             </div>
           </div>
         </div>
       </section>
 
       <!-- ========================================================
-           ARQUITECTURA: ¿POR QUÉ DE CADA ARCHIVO?
+           ARQUITECTURA STRAPI: ¿POR QUÉ DE CADA ARCHIVO?
            ======================================================== -->
       <section id="por-que-archivos" class="checkpoint-section">
         <header class="checkpoint-section__header">
           <div>
-            <div class="checkpoint-index">MAPA ESTRUCTURAL</div>
-            <h2>¿Por qué existen estos archivos y qué hace cada uno?</h2>
+            <div class="checkpoint-index">ESTRUCTURA OFICIAL STRAPI</div>
+            <h2>¿Cómo se organiza una API en Strapi (`src/api/<nombre>/`)?</h2>
           </div>
-          <span class="checkpoint-stamp">ARQUITECTURA</span>
+          <span class="checkpoint-stamp">STRAPI BLUEPRINT</span>
         </header>
 
         <div class="concept-box">
-          <strong>La regla de oro:</strong> Si colocas 500 líneas en un solo archivo <code>index.js</code>, el código se vuelve imposible de testear, depurar y escalar. Una API profesional desacopla responsabilidades para que cada archivo tenga una sola razón para cambiar (Principio SRP).
+          <strong>La Anatomía de Strapi:</strong> En Strapi, cada entidad del negocio es un módulo autónomo dentro de <code>src/api/&lt;nombre-api&gt;/</code>. Esta arquitectura desacoplada permite que el equipo de desarrollo cree modelos, rutas y controladores sin mezclar código ni generar dependencias circulares.
         </div>
 
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1rem;">
           <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">1. package.json</h4>
+            <h4 style="color:#a78bfa; font-family:var(--font-mono); margin-bottom:0.35rem;">1. content-types/&lt;api&gt;/schema.json</h4>
             <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>El Pasaporte:</strong> Declara el tipo de módulo (<code>"type": "module"</code> para usar <code>import/export</code> modernos), los scripts de ejecución y las librerías necesarias.
+              <strong>El Esquema del Modelo:</strong> Define el nombre de la tabla en PostgreSQL (<code>collectionName</code>), los atributos (<code>string</code>, <code>decimal</code>, <code>enumeration</code>, <code>json</code>), longitudes mínimas y relaciones. Strapi genera las migraciones de base de datos a partir de este JSON.
             </p>
           </div>
 
           <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">2. src/app.js</h4>
+            <h4 style="color:#a78bfa; font-family:var(--font-mono); margin-bottom:0.35rem;">2. routes/&lt;api&gt;.js (Core Router)</h4>
             <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>El Ensamblador:</strong> Configura middlewares (JSON, cookies, CORS, SemVer) y enlaza las rutas. <em>No abre puertos de red</em>, permitiendo probar la app en memoria.
+              <strong>El Enrutador Core:</strong> Usa <code>factories.createCoreRouter('api::orden.orden')</code> para autogenerar de inmediato el CRUD estándar (find, findOne, create, update, delete).
             </p>
           </div>
 
           <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">3. src/server.js</h4>
+            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">3. routes/custom-&lt;api&gt;.js (Custom Router)</h4>
             <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>El Escuchador de Red:</strong> Lee el puerto del entorno (<code>process.env.PORT</code>), ejecuta <code>app.listen()</code> y gestiona el apagado ordenado (Graceful Shutdown).
+              <strong>Las Rutas Custom OMS:</strong> Exporta un objeto <code>{ routes: [...] }</code> con endpoints adicionales que no pertenecen al CRUD básico, como <code>/preview</code> para simulaciones o <code>/schema</code> para metadatos.
             </p>
           </div>
 
           <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">4. src/routes/orden.routes.js</h4>
+            <h4 style="color:#a78bfa; font-family:var(--font-mono); margin-bottom:0.35rem;">4. controllers/&lt;api&gt;.js (Core Controller)</h4>
             <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>El Semáforo:</strong> Conecta los métodos HTTP (GET, POST, PATCH, DELETE) con sus respectivos controladores y validadores. Define las URLs públicas.
+              <strong>El Controlador Core:</strong> Usa <code>factories.createCoreController</code> para conectar el router base con el Entity Service nativo de Strapi.
             </p>
           </div>
 
           <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">5. src/controllers/orden.controller.js</h4>
+            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">5. controllers/custom-&lt;api&gt;.js</h4>
             <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>El Embajador HTTP:</strong> Extrae datos de <code>req.body</code>, <code>req.params</code>, <code>req.query</code>, los envía al servicio y devuelve <code>res.status().json()</code> y cookies.
+              <strong>El Controlador Personalizado (ctx):</strong> Recibe el contexto Koa (<code>ctx</code>), extrae el cuerpo con <code>ctx.request.body?.data ?? ctx.request.body</code>, delega en <code>strapi.service</code> y responde asignando a <code>ctx.body</code> y <code>ctx.status</code>.
             </p>
           </div>
 
           <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">6. src/dtos/orden.dto.js</h4>
+            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">6. dtos/&lt;api&gt;.dto.js</h4>
             <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>El Filtro de Seguridad:</strong> Desecha campos maliciosos enviados por el cliente (como <code>esAdmin: true</code>) y normaliza strings con <code>trim()</code> e inmutabilidad.
+              <strong>El Filtro de Seguridad (Whitelist):</strong> En APIs públicas o federadas, limpia espacios en blanco, descarta atributos prohibidos (ej. <code>esAdmin: true</code>) y congela el objeto con <code>Object.freeze()</code>.
             </p>
           </div>
 
           <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">7. src/validators/orden.validator.js</h4>
+            <h4 style="color:#a78bfa; font-family:var(--font-mono); margin-bottom:0.35rem;">7. services/&lt;api&gt;.js (Core Service)</h4>
             <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>El Portero:</strong> Utiliza <code>express-validator</code> para rechazar de inmediato datos con formatos erróneos (400 Bad Request) antes de tocar el controlador.
+              <strong>El Servicio Core:</strong> Usa <code>factories.createCoreService</code> para exponer operaciones nativas sobre el motor de base de datos de Strapi.
             </p>
           </div>
 
           <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">8. src/services/orden.service.js</h4>
+            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">8. services/custom-&lt;api&gt;.js</h4>
             <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>El Cerebro de Negocio:</strong> Calcula impuestos (IVA 12%), valida transiciones de estado, ejecuta simulaciones de prueba (<code>/preview</code>) e introspección de esquemas (<code>/schema</code>).
-            </p>
-          </div>
-
-          <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">9. src/models/orden.model.js</h4>
-            <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>La Bóveda de Datos:</strong> Gestiona la colección de órdenes, generación de IDs únicos, filtrado y persistencia independiente del motor de base de datos.
-            </p>
-          </div>
-
-          <div class="sidebar__card">
-            <h4 style="color:var(--accent-cyan); font-family:var(--font-mono); margin-bottom:0.35rem;">10. src/middlewares/error.middleware.js</h4>
-            <p style="font-size:0.82rem; color:var(--text-muted);">
-              <strong>La Red de Salvamento:</strong> Captura peticiones a URLs inexistentes (404) y excepciones inesperadas de 4 argumentos <code>(err, req, res, next)</code> evitando caídas del servidor.
+              <strong>El Cerebro de Negocio:</strong> Ejecuta cálculos matemáticos (IVA del 12%), valida transiciones de estado, interactúa con <code>strapi.db.query</code> y ejecuta el dry-run del <code>/preview</code>.
             </p>
           </div>
         </div>
       </section>
 
       <!-- ========================================================
-           CHECKPOINT 01: EXPRESS, SEMVER & SERVER
+           CHECKPOINT 01: EL ESQUEMA DEL CONTENT-TYPE
            ======================================================== -->
       <section id="cp-01" class="checkpoint-section">
         <header class="checkpoint-section__header">
           <div>
-            <div class="checkpoint-index">01 / EXPRESS, SEMVER & SERVIDOR · 5 MIN</div>
-            <h2>El Ensamblador y el Escuchador de Red</h2>
+            <div class="checkpoint-index">01 / CONTENT-TYPE STRAPI · 5 MIN</div>
+            <h2>El Esquema de Datos (`schema.json`)</h2>
           </div>
           <button type="button" class="btn" data-checkpoint-toggle="1">✓ Marcar como Completado</button>
         </header>
 
         <div class="concept-box">
-          <strong>Concepto Clave:</strong> Separar <code>app.js</code> de <code>server.js</code> te permite probar la aplicación en pruebas automatizadas sin ocupar puertos TCP reales. El header <code>X-API-Version</code> garantiza que los clientes conozcan la versión exacta bajo la especificación SemVer (MAJOR.MINOR.PATCH).
+          <strong>Punto de Partida en Strapi:</strong> Todo en Strapi nace de un <code>schema.json</code>. En este archivo declaras qué campos existen, qué tipos de datos aceptan (<code>string</code>, <code>decimal</code>, <code>enumeration</code>, <code>json</code>) y cuáles son obligatorios. Strapi se encarga de crear las tablas en PostgreSQL automáticamente.
         </div>
 
         <div class="code-card">
           <div class="code-card__bar">
             <div class="code-card__dots"><i></i><i></i><i></i></div>
-            <span class="code-card__file">api/src/app.js · (Haz clic en cualquier línea para inspeccionar)</span>
-            <button type="button" class="btn-copy" data-copy-target="#codeApp">Copiar Código</button>
+            <span class="code-card__file">api/src/api/orden/content-types/orden/schema.json</span>
+            <button type="button" class="btn-copy" data-copy-target="#codeSchema">Copiar Código</button>
           </div>
           <div class="code-card__content">
-            <pre><code id="codeApp">
-<div class="code-line" data-desc="<code>import</code> es la sintaxis nativa de ECMAScript Modules (ESM) para traer dependencias. Reemplaza al antiguo <code>require()</code> de CommonJS."><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">import</span> express <span class="kw">from</span> <span class="str">"express"</span>;</span><span class="code-line__comment">// Importa el framework Express</span></div>
-<div class="code-line" data-desc="<code>cookie-parser</code> analiza la cabecera HTTP <code>Cookie</code> y la transforma en el objeto <code>req.cookies</code> accesible en los controladores."><span class="code-line__num">2</span><span class="code-line__code"><span class="kw">import</span> cookieParser <span class="kw">from</span> <span class="str">"cookie-parser"</span>;</span><span class="code-line__comment">// Parsea cookies HTTP</span></div>
-<div class="code-line" data-desc="<code>cors</code> habilita Cross-Origin Resource Sharing para que navegadores en otros dominios o puertos puedan hacer peticiones seguras a esta API."><span class="code-line__num">3</span><span class="code-line__code"><span class="kw">import</span> cors <span class="kw">from</span> <span class="str">"cors"</span>;</span><span class="code-line__comment">// Habilita CORS</span></div>
-<div class="code-line" data-desc="Importa el enrutador que agrupa todas las rutas de órdenes de servicio OMS."><span class="code-line__num">4</span><span class="code-line__code"><span class="kw">import</span> { ordenRouter } <span class="kw">from</span> <span class="str">"./routes/orden.routes.js"</span>;</span></div>
-<div class="code-line" data-desc="Importa los middlewares de manejo de 404 y captura global de excepciones."><span class="code-line__num">5</span><span class="code-line__code"><span class="kw">import</span> { rutaNoEncontrada, manejarError } <span class="kw">from</span> <span class="str">"./middlewares/error.middleware.js"</span>;</span></div>
-<div class="code-line"><span class="code-line__num">6</span><span class="code-line__code"></span></div>
-<div class="code-line" data-desc="Constantes de versión SemVer. Cambiar la versión aquí se refleja automáticamente en la cabecera <code>X-API-Version</code> y en <code>/health</code>."><span class="code-line__num">7</span><span class="code-line__code"><span class="kw">export const</span> API_VERSION = <span class="str">"1.0.0"</span>;</span></div>
-<div class="code-line" data-desc="Instancia la aplicación Express. <code>express()</code> crea una función que actúa como servidor HTTP lógico."><span class="code-line__num">8</span><span class="code-line__code"><span class="kw">const</span> app = <span class="fn">express</span>();</span></div>
-<div class="code-line"><span class="code-line__num">9</span><span class="code-line__code"></span></div>
-<div class="code-line" data-desc="<code>app.use(express.json())</code> es un middleware interno que lee los bytes del cuerpo de la petición y los parsea como JSON en <code>req.body</code>. Sin esta línea, <code>req.body</code> sería <code>undefined</code>."><span class="code-line__num">10</span><span class="code-line__code">app.<span class="fn">use</span>(express.<span class="fn">json</span>());</span><span class="code-line__comment">// Habilita lectura de JSON en req.body</span></div>
-<div class="code-line" data-desc="Middleware global personalizado. <code>req</code> representa la petición, <code>res</code> la respuesta, y <code>next()</code> le dice a Express que continúe con el siguiente middleware en la cadena."><span class="code-line__num">11</span><span class="code-line__code">app.<span class="fn">use</span>((req, res, next) =&gt; {</span></div>
-<div class="code-line" data-desc="<code>res.set(clave, valor)</code> inyecta cabeceras HTTP personalizadas en la respuesta antes de enviarla al cliente."><span class="code-line__num">12</span><span class="code-line__code">  res.<span class="fn">set</span>(<span class="str">"X-API-Version"</span>, API_VERSION);</span></div>
-<div class="code-line" data-desc="Llamar a <code>next()</code> es OBLIGATORIO en un middleware; de lo contrario, la petición se quedaría 'colgada' esperando para siempre."><span class="code-line__num">13</span><span class="code-line__code">  <span class="fn">next</span>();</span></div>
-<div class="code-line"><span class="code-line__num">14</span><span class="code-line__code">});</span></div>
-<div class="code-line"><span class="code-line__num">15</span><span class="code-line__code"></span></div>
-<div class="code-line" data-desc="Endpoint de diagnóstico de salud. Responde 200 OK con el tiempo de actividad del proceso Node en segundos (<code>process.uptime()</code>)."><span class="code-line__num">16</span><span class="code-line__code">app.<span class="fn">get</span>(<span class="str">"/health"</span>, (req, res) =&gt; {</span></div>
-<div class="code-line" data-desc="<code>res.status(200).json(...)</code> establece el código HTTP 200 (Éxito) y serializa el objeto como JSON cerrando la conexión."><span class="code-line__num">17</span><span class="code-line__code">  res.<span class="fn">status</span>(<span class="num">200</span>).<span class="fn">json</span>({ estado: <span class="str">"operativo"</span>, version: API_VERSION });</span></div>
-<div class="code-line"><span class="code-line__num">18</span><span class="code-line__code">});</span></div>
-<div class="code-line"><span class="code-line__num">19</span><span class="code-line__code"></span></div>
-<div class="code-line" data-desc="Monta el enrutador bajo el prefijo '/api/v1/oms/ordenes'. Todas las rutas internas de ese enrutador tendrán este prefijo automáticamente."><span class="code-line__num">20</span><span class="code-line__code">app.<span class="fn">use</span>(<span class="str">"/api/v1/oms/ordenes"</span>, ordenRouter);</span></div>
-<div class="code-line"><span class="code-line__num">21</span><span class="code-line__code">app.<span class="fn">use</span>(rutaNoEncontrada);</span><span class="code-line__comment">// Atrapa rutas inexistentes (404)</span></div>
-<div class="code-line" data-desc="El middleware de errores con 4 argumentos SIEMPRE debe colocarse al final de la aplicación."><span class="code-line__num">22</span><span class="code-line__code">app.<span class="fn">use</span>(manejarError);</span><span class="code-line__comment">// Captura global de excepciones</span></div>
-<div class="code-line" data-desc="Exporta la app por defecto para que las pruebas de integración y <code>server.js</code> puedan consumirla."><span class="code-line__num">23</span><span class="code-line__code"><span class="kw">export default</span> app;</span></div>
+            <pre><code id="codeSchema">
+<div class="code-line" data-desc="<code>kind: 'collectionType'</code> le indica a Strapi que esta entidad contendrá múltiples registros (tabla estándar). Un 'singleType' contendría un solo registro (ej: configuraciones)."><span class="code-line__num">1</span><span class="code-line__code">{</span></div>
+<div class="code-line" data-desc="Define que es una colección"><span class="code-line__num">2</span><span class="code-line__code">  <span class="str">"kind"</span>: <span class="str">"collectionType"</span>,</span></div>
+<div class="code-line" data-desc="<code>collectionName</code> es el nombre físico de la tabla que Strapi creará en la base de datos PostgreSQL."><span class="code-line__num">3</span><span class="code-line__code">  <span class="str">"collectionName"</span>: <span class="str">"oms_ordenes"</span>,</span></div>
+<div class="code-line" data-desc="Metadatos informativos: nombre singular, plural y descripción que se muestran en el panel de administración de Strapi."><span class="code-line__num">4</span><span class="code-line__code">  <span class="str">"info"</span>: { <span class="str">"singularName"</span>: <span class="str">"orden"</span>, <span class="str">"pluralName"</span>: <span class="str">"ordenes"</span>, <span class="str">"displayName"</span>: <span class="str">"Orden de Servicio OMS"</span> },</span></div>
+<div class="code-line" data-desc="<code>draftAndPublish: false</code> desactiva el flujo de borradores para que los registros queden activos directamente al crearse."><span class="code-line__num">5</span><span class="code-line__code">  <span class="str">"options"</span>: { <span class="str">"draftAndPublish"</span>: <span class="bool">false</span> },</span></div>
+<div class="code-line" data-desc="El bloque <code>attributes</code> define las columnas y reglas de validación en la base de datos."><span class="code-line__num">6</span><span class="code-line__code">  <span class="str">"attributes"</span>: {</span></div>
+<div class="code-line" data-desc="Campo cliente: tipo string obligatorio con validación de longitud"><span class="code-line__num">7</span><span class="code-line__code">    <span class="str">"cliente"</span>: { <span class="str">"type"</span>: <span class="str">"string"</span>, <span class="str">"required"</span>: <span class="bool">true</span>, <span class="str">"minLength"</span>: <span class="num">3</span>, <span class="str">"maxLength"</span>: <span class="num">120</span> },</span></div>
+<div class="code-line" data-desc="Campo servicio: tipo enumeration (catálogo cerrado de valores permitidos)"><span class="code-line__num">8</span><span class="code-line__code">    <span class="str">"servicio"</span>: { <span class="str">"type"</span>: <span class="str">"enumeration"</span>, <span class="str">"enum"</span>: [<span class="str">"inspeccion_sanitaria"</span>, <span class="str">"certificacion_bpm"</span>, <span class="str">"auditoria_calidad"</span>, <span class="str">"control_aduanero"</span>], <span class="str">"required"</span>: <span class="bool">true</span> },</span></div>
+<div class="code-line" data-desc="Campo monto: tipo decimal con coma flotante"><span class="code-line__num">9</span><span class="code-line__code">    <span class="str">"monto"</span>: { <span class="str">"type"</span>: <span class="str">"decimal"</span>, <span class="str">"required"</span>: <span class="bool">true</span> },</span></div>
+<div class="code-line" data-desc="Campo metadata: tipo json (JSONB en PostgreSQL) para flexibilidad enterprise"><span class="code-line__num">10</span><span class="code-line__code">    <span class="str">"metadata"</span>: { <span class="str">"type"</span>: <span class="str">"json"</span> }</span></div>
+<div class="code-line"><span class="code-line__num">11</span><span class="code-line__code">  }</span></div>
+<div class="code-line"><span class="code-line__num">12</span><span class="code-line__code">}</span></div>
             </code></pre>
           </div>
         </div>
 
-        <!-- Cajón de explicación dinámica -->
         <div class="line-explainer-drawer">
           <div class="line-explainer-header">
             <div class="line-explainer-title">🔎 Inspector de Línea</div>
@@ -456,39 +430,40 @@
       </section>
 
       <!-- ========================================================
-           CHECKPOINT 02: DTOs & SEGURIDAD ESTRICTA
+           CHECKPOINT 02: RUTAS CORE Y RUTAS CUSTOM
            ======================================================== -->
       <section id="cp-02" class="checkpoint-section">
         <header class="checkpoint-section__header">
           <div>
-            <div class="checkpoint-index">02 / DTOs & SEGURIDAD · 4 MIN</div>
-            <h2>El Filtro de Datos contra Inyección (Whitelist)</h2>
+            <div class="checkpoint-index">02 / RUTAS EN STRAPI · 5 MIN</div>
+            <h2>El Enrutador Core y el Enrutador Custom OMS</h2>
           </div>
           <button type="button" class="btn" data-checkpoint-toggle="2">✓ Marcar como Completado</button>
         </header>
 
         <div class="concept-box">
-          <strong>Vulnerabilidad de Asignación Masiva:</strong> Si pasas <code>req.body</code> directamente a tu base de datos, un usuario curioso puede enviar <code>{ "esAdmin": true, "total": 0.01 }</code>. El <strong>DTO (Data Transfer Object)</strong> actúa como un escudo que sólo copia propiedades explícitamente autorizadas y congela el objeto con <code>Object.freeze()</code>.
+          <strong>Rutas Custom vs Core en Strapi:</strong> Las rutas core con <code>factories.createCoreRouter</code> cubren el CRUD básico. Pero en <strong>OMS</strong> requerimos endpoints como <code>POST /ordenes/preview</code> y <code>GET /ordenes/schema</code>. Strapi te permite crear un archivo adicional (ej: <code>routes/custom-orden.js</code>) con un arreglo de rutas que se fusionan sin sobreescribir el core.
         </div>
 
         <div class="code-card">
           <div class="code-card__bar">
             <div class="code-card__dots"><i></i><i></i><i></i></div>
-            <span class="code-card__file">api/src/dtos/orden.dto.js · (Haz clic en cualquier línea para inspeccionar)</span>
-            <button type="button" class="btn-copy" data-copy-target="#codeDto">Copiar Código</button>
+            <span class="code-card__file">api/src/api/orden/routes/custom-orden.js</span>
+            <button type="button" class="btn-copy" data-copy-target="#codeRoutes">Copiar Código</button>
           </div>
           <div class="code-card__content">
-            <pre><code id="codeDto">
-<div class="code-line" data-desc="Declaración de clase ES6 para el DTO de creación de órdenes OMS."><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">export class</span> CrearOrdenDTO {</span></div>
-<div class="code-line" data-desc="El constructor recibe el payload crudo de la petición (usualmente req.body) con un valor predeterminado de objeto vacío para evitar errores de TypeError."><span class="code-line__num">2</span><span class="code-line__code">  <span class="kw">constructor</span>(payload = {}) {</span></div>
-<div class="code-line" data-desc="<code>String(...).trim()</code> convierte el valor a cadena y elimina espacios en blanco al inicio y final (evita nombres como '   Hospital  ')."><span class="code-line__num">3</span><span class="code-line__code">    <span class="kw">this</span>.cliente = <span class="fn">String</span>(payload.cliente || <span class="str">""</span>).<span class="fn">trim</span>();</span></div>
-<div class="code-line" data-desc="Estandariza a minúsculas con <code>toLowerCase()</code> para evitar inconsistencias entre 'INSPECCION' e 'inspeccion'."><span class="code-line__num">4</span><span class="code-line__code">    <span class="kw">this</span>.servicio = <span class="fn">String</span>(payload.servicio || <span class="str">""</span>).<span class="fn">trim</span>().<span class="fn">toLowerCase</span>();</span></div>
-<div class="code-line" data-desc="Casting explícito a número mediante <code>Number(...)</code> para prevenir inyecciones de strings o arrays en campos monetarios."><span class="code-line__num">5</span><span class="code-line__code">    <span class="kw">this</span>.monto = <span class="fn">Number</span>(payload.monto);</span></div>
-<div class="code-line" data-desc="Asigna prioridad por defecto si no fue enviada en la petición."><span class="code-line__num">6</span><span class="code-line__code">    <span class="kw">this</span>.prioridad = payload.prioridad ? <span class="fn">String</span>(payload.prioridad).<span class="fn">trim</span>().<span class="fn">toLowerCase</span>() : <span class="str">"media"</span>;</span></div>
-<div class="code-line" data-desc="Regla de seguridad: Toda orden creada nace en estado 'borrador'. Aunque el atacante envíe 'estado: aprobado', el DTO ignora su valor y fija 'borrador'."><span class="code-line__num">7</span><span class="code-line__code">    <span class="kw">this</span>.estado = <span class="str">"borrador"</span>;</span><span class="code-line__comment">// Forzado por seguridad</span></div>
-<div class="code-line" data-desc="<code>Object.freeze(this)</code> hace que la instancia sea inmutable; ningún código posterior podrá agregar, borrar o modificar sus propiedades."><span class="code-line__num">8</span><span class="code-line__code">    Object.<span class="fn">freeze</span>(<span class="kw">this</span>);</span></div>
-<div class="code-line"><span class="code-line__num">9</span><span class="code-line__code">  }</span></div>
-<div class="code-line"><span class="code-line__num">10</span><span class="code-line__code">}</span></div>
+            <pre><code id="codeRoutes">
+<div class="code-line" data-desc="En Strapi, exportar un objeto con la propiedad <code>routes: [...]</code> registra rutas personalizadas en el sistema."><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">export default</span> {</span></div>
+<div class="code-line"><span class="code-line__num">2</span><span class="code-line__code">  routes: [</span></div>
+<div class="code-line" data-desc="Endpoint custom OMS para introspección del esquema. El handler 'custom-orden.schema' le dice a Strapi: busca en controllers/custom-orden.js la función schema."><span class="code-line__num">3</span><span class="code-line__code">    { method: <span class="str">"GET"</span>, path: <span class="str">"/ordenes/schema"</span>, handler: <span class="str">"custom-orden.schema"</span>, config: { auth: <span class="bool">false</span> } },</span></div>
+<div class="code-line" data-desc="Endpoint custom OMS para simulación previa (Dry-Run). Invoca la función preview del controlador."><span class="code-line__num">4</span><span class="code-line__code">    { method: <span class="str">"POST"</span>, path: <span class="str">"/ordenes/preview"</span>, handler: <span class="str">"custom-orden.preview"</span>, config: { auth: <span class="bool">false</span> } },</span></div>
+<div class="code-line" data-desc="Rutas RESTful estándar delegadas al controlador personalizado con soporte DTO."><span class="code-line__num">5</span><span class="code-line__code">    { method: <span class="str">"GET"</span>, path: <span class="str">"/ordenes"</span>, handler: <span class="str">"custom-orden.list"</span>, config: { auth: <span class="bool">false</span> } },</span></div>
+<div class="code-line" data-desc="Ruta parametrizada por ID"><span class="code-line__num">6</span><span class="code-line__code">    { method: <span class="str">"GET"</span>, path: <span class="str">"/ordenes/:id"</span>, handler: <span class="str">"custom-orden.findOne"</span>, config: { auth: <span class="bool">false</span> } },</span></div>
+<div class="code-line" data-desc="Ruta de creación"><span class="code-line__num">7</span><span class="code-line__code">    { method: <span class="str">"POST"</span>, path: <span class="str">"/ordenes"</span>, handler: <span class="str">"custom-orden.create"</span>, config: { auth: <span class="bool">false</span> } },</span></div>
+<div class="code-line" data-desc="Ruta de actualización parcial"><span class="code-line__num">8</span><span class="code-line__code">    { method: <span class="str">"PATCH"</span>, path: <span class="str">"/ordenes/:id"</span>, handler: <span class="str">"custom-orden.update"</span>, config: { auth: <span class="bool">false</span> } },</span></div>
+<div class="code-line" data-desc="Ruta de eliminación"><span class="code-line__num">9</span><span class="code-line__code">    { method: <span class="str">"DELETE"</span>, path: <span class="str">"/ordenes/:id"</span>, handler: <span class="str">"custom-orden.delete"</span>, config: { auth: <span class="bool">false</span> } }</span></div>
+<div class="code-line"><span class="code-line__num">10</span><span class="code-line__code">  ]</span></div>
+<div class="code-line"><span class="code-line__num">11</span><span class="code-line__code">};</span></div>
             </code></pre>
           </div>
         </div>
@@ -503,45 +478,43 @@
       </section>
 
       <!-- ========================================================
-           CHECKPOINT 03: VALIDACIONES DECLARATIVAS
+           CHECKPOINT 03: CONTROLADOR STRAPI & KOA CONTEXT (ctx)
            ======================================================== -->
       <section id="cp-03" class="checkpoint-section">
         <header class="checkpoint-section__header">
           <div>
-            <div class="checkpoint-index">03 / VALIDACIONES DECLARATIVAS · 4 MIN</div>
-            <h2>El Portero con express-validator (400 Bad Request)</h2>
+            <div class="checkpoint-index">03 / CONTROLADOR STRAPI · 5 MIN</div>
+            <h2>El Manejo del Contexto Koa (`ctx`) en Strapi</h2>
           </div>
           <button type="button" class="btn" data-checkpoint-toggle="3">✓ Marcar como Completado</button>
         </header>
 
         <div class="concept-box">
-          <strong>Por qué validar en el middleware:</strong> Si una petición trae datos inválidos (monto negativo o cliente vacío), rechazarla en la puerta con <strong>HTTP 400</strong> ahorra tiempo de base de datos y memoria de Node.js.
+          <strong>¿Por qué en Strapi usamos `ctx` y no `req/res`?:</strong> Strapi funciona sobre <strong>Koa.js</strong> en su capa HTTP. Koa fusiona `request` y `response` en un único objeto llamado <strong>`ctx` (Context)</strong>. En Strapi, para enviar datos basta con asignar <code>ctx.body = resultado</code> y <code>ctx.status = 201</code>; no necesitas llamar a <code>res.json()</code> ni a <code>res.send()</code>. Además, Strapi por convención envía los datos en <code>ctx.request.body.data</code>.
         </div>
 
         <div class="code-card">
           <div class="code-card__bar">
             <div class="code-card__dots"><i></i><i></i><i></i></div>
-            <span class="code-card__file">api/src/validators/orden.validator.js · (Haz clic en cualquier línea para inspeccionar)</span>
-            <button type="button" class="btn-copy" data-copy-target="#codeValidator">Copiar Código</button>
+            <span class="code-card__file">api/src/api/orden/controllers/custom-orden.js</span>
+            <button type="button" class="btn-copy" data-copy-target="#codeController">Copiar Código</button>
           </div>
           <div class="code-card__content">
-            <pre><code id="codeValidator">
-<div class="code-line" data-desc="Importa las utilidades <code>body</code> y <code>validationResult</code> de express-validator."><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">import</span> { body, validationResult } <span class="kw">from</span> <span class="str">"express-validator"</span>;</span></div>
-<div class="code-line"><span class="code-line__num">2</span><span class="code-line__code"></span></div>
-<div class="code-line" data-desc="Middleware que inspecciona si express-validator registró fallos durante la verificación del cuerpo de la petición."><span class="code-line__num">3</span><span class="code-line__code"><span class="kw">export const</span> verificarErroresValidacion = (req, res, next) =&gt; {</span></div>
-<div class="code-line" data-desc="<code>validationResult(req)</code> recopila todos los errores acumulados por las reglas declarativas anteriores."><span class="code-line__num">4</span><span class="code-line__code">  <span class="kw">const</span> errores = <span class="fn">validationResult</span>(req);</span></div>
-<div class="code-line" data-desc="Si <code>errores.isEmpty()</code> es falso, significa que hay al menos un campo con formato erróneo. Respondemos inmediatamente con HTTP 400."><span class="code-line__num">5</span><span class="code-line__code">  <span class="kw">if</span> (!errores.<span class="fn">isEmpty</span>()) {</span></div>
-<div class="code-line" data-desc="Responde 400 Bad Request estructurado con la lista exacta de campos que fallaron."><span class="code-line__num">6</span><span class="code-line__code">    <span class="kw">return</span> res.<span class="fn">status</span>(<span class="num">400</span>).<span class="fn">json</span>({ error: <span class="str">"Validación fallida"</span>, errores: errores.<span class="fn">array</span>() });</span></div>
-<div class="code-line"><span class="code-line__num">7</span><span class="code-line__code">  }</span></div>
-<div class="code-line" data-desc="Si no hay errores, <code>next()</code> transfiere el control al controlador."><span class="code-line__num">8</span><span class="code-line__code">  <span class="fn">next</span>();</span></div>
-<div class="code-line"><span class="code-line__num">9</span><span class="code-line__code">};</span></div>
-<div class="code-line"><span class="code-line__num">10</span><span class="code-line__code"></span></div>
-<div class="code-line" data-desc="Cadena declarativa para validar la creación de órdenes. Express ejecuta cada función del arreglo en orden."><span class="code-line__num">11</span><span class="code-line__code"><span class="kw">export const</span> validarCrearOrden = [</span></div>
-<div class="code-line" data-desc="Valida que el campo 'cliente' no esté vacío y contenga entre 3 y 120 caracteres."><span class="code-line__num">12</span><span class="code-line__code">  <span class="fn">body</span>(<span class="str">"cliente"</span>).<span class="fn">trim</span>().<span class="fn">notEmpty</span>().<span class="fn">isLength</span>({ min: <span class="num">3</span>, max: <span class="num">120</span> }),</span></div>
-<div class="code-line" data-desc="Valida que el campo 'servicio' coincida obligatoriamente con uno de los valores permitidos del catálogo."><span class="code-line__num">13</span><span class="code-line__code">  <span class="fn">body</span>(<span class="str">"servicio"</span>).<span class="fn">isIn</span>([<span class="str">"inspeccion_sanitaria"</span>, <span class="str">"certificacion_bpm"</span>, <span class="str">"auditoria_calidad"</span>, <span class="str">"control_aduanero"</span>]),</span></div>
-<div class="code-line" data-desc="Valida que 'monto' sea un número decimal positivo mayor o igual a 1.00."><span class="code-line__num">14</span><span class="code-line__code">  <span class="fn">body</span>(<span class="str">"monto"</span>).<span class="fn">isFloat</span>({ min: <span class="num">1</span> }).<span class="fn">withMessage</span>(<span class="str">"El monto debe ser mayor a 1.00"</span>),</span></div>
-<div class="code-line" data-desc="El último elemento del arreglo es el evaluador que frena la petición si alguna de las reglas anteriores falló."><span class="code-line__num">15</span><span class="code-line__code">  verificarErroresValidacion</span></div>
-<div class="code-line"><span class="code-line__num">16</span><span class="code-line__code">];</span></div>
+            <pre><code id="codeController">
+<div class="code-line" data-desc="Helper para obtener el servicio de la API mediante la inyección del objeto global <code>strapi</code>."><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">const</span> getCustomService = (strapi) =&gt; strapi.<span class="fn">service</span>(<span class="str">"api::orden.custom-orden"</span>);</span></div>
+<div class="code-line" data-desc="Función utilitaria estándar de Strapi en OMS: extrae el payload tanto si viene envuelto en { data: { ... } } como si viene en formato JSON plano."><span class="code-line__num">2</span><span class="code-line__code"><span class="kw">const</span> getPayload = (ctx) =&gt; ctx.request.body?.data ?? ctx.request.body ?? {};</span></div>
+<div class="code-line"><span class="code-line__num">3</span><span class="code-line__code"></span></div>
+<div class="code-line" data-desc="Fábrica de controlador Strapi: recibe la instancia de <code>strapi</code> inyectada como parámetro."><span class="code-line__num">4</span><span class="code-line__code"><span class="kw">export default</span> ({ strapi }) =&gt; ({</span></div>
+<div class="code-line" data-desc="Método de controlador para simulación previa /preview. En Strapi, para responder asignas directamente a <code>ctx.body</code>."><span class="code-line__num">5</span><span class="code-line__code">  <span class="kw">async</span> <span class="fn">preview</span>(ctx) {</span></div>
+<div class="code-line" data-desc="Delega en el servicio y asigna la respuesta directamente a ctx.body."><span class="code-line__num">6</span><span class="code-line__code">    ctx.body = <span class="kw">await</span> <span class="fn">getCustomService</span>(strapi).<span class="fn">preview</span>(<span class="fn">getPayload</span>(ctx));</span></div>
+<div class="code-line"><span class="code-line__num">7</span><span class="code-line__code">  },</span></div>
+<div class="code-line" data-desc="Método de creación con DTO estricto y asignación de código HTTP 201 Created."><span class="code-line__num">8</span><span class="code-line__code">  <span class="kw">async</span> <span class="fn">create</span>(ctx) {</span></div>
+<div class="code-line" data-desc="Instancia el DTO para descartar campos no autorizados"><span class="code-line__num">9</span><span class="code-line__code">    <span class="kw">const</span> dto = <span class="kw">new</span> <span class="fn">CrearOrdenDTO</span>(<span class="fn">getPayload</span>(ctx));</span></div>
+<div class="code-line" data-desc="Invoca al servicio para persistir en base de datos"><span class="code-line__num">10</span><span class="code-line__code">    <span class="kw">const</span> nuevaOrden = <span class="kw">await</span> <span class="fn">getCustomService</span>(strapi).<span class="fn">create</span>(dto);</span></div>
+<div class="code-line" data-desc="En Koa/Strapi, <code>ctx.status = 201</code> define el código de estado de la respuesta."><span class="code-line__num">11</span><span class="code-line__code">    ctx.status = <span class="num">201</span>;</span></div>
+<div class="code-line" data-desc="Asigna el cuerpo JSON final de respuesta."><span class="code-line__num">12</span><span class="code-line__code">    ctx.body = { data: nuevaOrden };</span></div>
+<div class="code-line"><span class="code-line__num">13</span><span class="code-line__code">  }</span></div>
+<div class="code-line"><span class="code-line__num">14</span><span class="code-line__code">});</span></div>
             </code></pre>
           </div>
         </div>
@@ -556,42 +529,38 @@
       </section>
 
       <!-- ========================================================
-           CHECKPOINT 04: MODELO Y PERSISTENCIA
+           CHECKPOINT 04: DTOs & SEGURIDAD EN STRAPI
            ======================================================== -->
       <section id="cp-04" class="checkpoint-section">
         <header class="checkpoint-section__header">
           <div>
-            <div class="checkpoint-index">04 / MODELO & PERSISTENCIA · 4 MIN</div>
-            <h2>La Bóveda de Datos Desacoplada</h2>
+            <div class="checkpoint-index">04 / DTOs & SANITIZACIÓN · 4 MIN</div>
+            <h2>El Escudo de Datos (Whitelist & Inmutabilidad)</h2>
           </div>
           <button type="button" class="btn" data-checkpoint-toggle="4">✓ Marcar como Completado</button>
         </header>
 
         <div class="concept-box">
-          <strong>Patrón Repositorio:</strong> Ni las rutas ni los controladores deben escribir consultas a bases de datos directamente. El <code>OrdenModel</code> encapsula el almacenamiento, ya sea en memoria, PostgreSQL o MongoDB, permitiendo cambiar el motor de datos sin tocar una sola línea del controlador.
+          <strong>Protección contra Mass Assignment:</strong> En Strapi, aunque el esquema defina atributos, un usuario puede intentar inyectar campos de auditoría como <code>id</code>, <code>createdAt</code> o banderas como <code>estado: 'aprobado'</code>. El <strong>DTO</strong> actúa antes del servicio para filtrar con una lista blanca y congelar la instancia con <code>Object.freeze()</code>.
         </div>
 
         <div class="code-card">
           <div class="code-card__bar">
             <div class="code-card__dots"><i></i><i></i><i></i></div>
-            <span class="code-card__file">api/src/models/orden.model.js · (Haz clic en cualquier línea para inspeccionar)</span>
-            <button type="button" class="btn-copy" data-copy-target="#codeModel">Copiar Código</button>
+            <span class="code-card__file">api/src/api/orden/dtos/orden.dto.js</span>
+            <button type="button" class="btn-copy" data-copy-target="#codeDto">Copiar Código</button>
           </div>
           <div class="code-card__content">
-            <pre><code id="codeModel">
-<div class="code-line" data-desc="Clase con métodos estáticos asíncronos que simula una colección de base de datos en memoria para pruebas inmediatas."><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">export class</span> OrdenModel {</span></div>
-<div class="code-line" data-desc="<code>static async find(filtros)</code> consulta las órdenes aplicando filtros opcionales de estado o cliente."><span class="code-line__num">2</span><span class="code-line__code">  <span class="kw">static async</span> <span class="fn">find</span>(filtros = {}) {</span></div>
-<div class="code-line" data-desc="Crea una copia superficial del arreglo para no mutar el almacenamiento base."><span class="code-line__num">3</span><span class="code-line__code">    <span class="kw">let</span> res = [...ordenesDb];</span></div>
-<div class="code-line" data-desc="Filtra por estado exacto si viene en la consulta (ej: ?estado=en_revision)."><span class="code-line__num">4</span><span class="code-line__code">    <span class="kw">if</span> (filtros.estado) res = res.<span class="fn">filter</span>((o) =&gt; o.estado === filtros.estado);</span></div>
-<div class="code-line" data-desc="Ordena por fecha de creación descendente (la más reciente primero)."><span class="code-line__num">5</span><span class="code-line__code">    <span class="kw">return</span> res.<span class="fn">sort</span>((a, b) =&gt; <span class="kw">new</span> <span class="fn">Date</span>(b.createdAt) - <span class="kw">new</span> <span class="fn">Date</span>(a.createdAt));</span></div>
-<div class="code-line"><span class="code-line__num">6</span><span class="code-line__code">  }</span></div>
-<div class="code-line" data-desc="Crea un nuevo registro con UUID autogenerado, cálculo de correlativo y timestamps ISO."><span class="code-line__num">7</span><span class="code-line__code">  <span class="kw">static async</span> <span class="fn">create</span>(datos) {</span></div>
-<div class="code-line" data-desc="Genera un código correlativo empresarial con padStart (ej: ORD-2026-003)."><span class="code-line__num">8</span><span class="code-line__code">    <span class="kw">const</span> codigo = <span class="str">`ORD-2026-${<span class="fn">String</span>(ordenesDb.length + <span class="num">1</span>).<span class="fn">padStart</span>(<span class="num">3</span>, <span class="str">"0"</span>)}`</span>;</span></div>
-<div class="code-line" data-desc="Crea el objeto completo y lo añade a la colección con unshift()."><span class="code-line__num">9</span><span class="code-line__code">    <span class="kw">const</span> nueva = { id: <span class="str">`ord-${Date.<span class="fn">now</span>().<span class="fn">toString</span>(<span class="num">16</span>)}`</span>, codigo, ...datos, createdAt: <span class="kw">new</span> <span class="fn">Date</span>().<span class="fn">toISOString</span>() };</span></div>
-<div class="code-line" data-desc="Inserta la orden al inicio de la lista de datos."><span class="code-line__num">10</span><span class="code-line__code">    ordenesDb.<span class="fn">unshift</span>(nueva);</span></div>
-<div class="code-line" data-desc="Retorna una copia independiente del registro recién creado."><span class="code-line__num">11</span><span class="code-line__code">    <span class="kw">return</span> { ...nueva };</span></div>
-<div class="code-line"><span class="code-line__num">12</span><span class="code-line__code">  }</span></div>
-<div class="code-line"><span class="code-line__num">13</span><span class="code-line__code">}</span></div>
+            <pre><code id="codeDto">
+<div class="code-line" data-desc="Clase constructora del DTO de creación de órdenes"><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">export class</span> CrearOrdenDTO {</span></div>
+<div class="code-line" data-desc="Constructor que recibe el payload crudo"><span class="code-line__num">2</span><span class="code-line__code">  <span class="kw">constructor</span>(payload = {}) {</span></div>
+<div class="code-line" data-desc="Limpia espacios en blanco al inicio y final con trim()"><span class="code-line__num">3</span><span class="code-line__code">    <span class="kw">this</span>.cliente = <span class="fn">String</span>(payload.cliente || <span class="str">""</span>).<span class="fn">trim</span>();</span></div>
+<div class="code-line" data-desc="Normaliza el valor a minúsculas"><span class="code-line__num">4</span><span class="code-line__code">    <span class="kw">this</span>.servicio = <span class="fn">String</span>(payload.servicio || <span class="str">""</span>).<span class="fn">trim</span>().<span class="fn">toLowerCase</span>();</span></div>
+<div class="code-line" data-desc="Casting a tipo numérico"><span class="code-line__num">5</span><span class="code-line__code">    <span class="kw">this</span>.monto = <span class="fn">Number</span>(payload.monto);</span></div>
+<div class="code-line" data-desc="Fuerza el estado a 'borrador' por seguridad"><span class="code-line__num">6</span><span class="code-line__code">    <span class="kw">this</span>.estado = <span class="str">"borrador"</span>; <span class="code-line__comment">// Previene auto-aprobación</span></span></div>
+<div class="code-line" data-desc="Object.freeze() hace que el DTO sea completamente inmutable en las siguientes capas"><span class="code-line__num">7</span><span class="code-line__code">    Object.<span class="fn">freeze</span>(<span class="kw">this</span>);</span></div>
+<div class="code-line"><span class="code-line__num">8</span><span class="code-line__code">  }</span></div>
+<div class="code-line"><span class="code-line__num">9</span><span class="code-line__code">}</span></div>
             </code></pre>
           </div>
         </div>
@@ -606,42 +575,43 @@
       </section>
 
       <!-- ========================================================
-           CHECKPOINT 05: SERVICIO & CUSTOM OMS (/preview, /schema)
+           CHECKPOINT 05: SERVICIOS STRAPI & strapi.service
            ======================================================== -->
       <section id="cp-05" class="checkpoint-section">
         <header class="checkpoint-section__header">
           <div>
-            <div class="checkpoint-index">05 / SERVICIOS & CUSTOM OMS · 5 MIN</div>
-            <h2>El Cerebro: Cálculos, Simulación y Esquemas Dinámicos</h2>
+            <div class="checkpoint-index">05 / SERVICIOS STRAPI · 5 MIN</div>
+            <h2>Lógica de Negocio y Consumo con `strapi.service`</h2>
           </div>
           <button type="button" class="btn" data-checkpoint-toggle="5">✓ Marcar como Completado</button>
         </header>
 
         <div class="concept-box">
-          <strong>La Magia de las APIs Custom en OMS:</strong> Además del CRUD típico, los backends empresariales necesitan endpoints especializados: <code>/preview</code> calcula impuestos y valida reglas de negocio sin escribir en la base de datos (Dry-Run), y <code>/schema</code> devuelve la definición de campos para que las interfaces frontend generen formularios dinámicos automáticamente.
+          <strong>La Regla de Oro en Strapi:</strong> Los controladores son delgados ("thin controllers"). Toda la matemática financiera (cálculo del IVA 12%), reglas de negocio e interacción con <code>strapi.db.query</code> vive en <code>services/custom-orden.js</code>. Cualquier otro módulo de Strapi puede consumirlo invocando <code>strapi.service('api::orden.custom-orden')</code>.
         </div>
 
         <div class="code-card">
           <div class="code-card__bar">
             <div class="code-card__dots"><i></i><i></i><i></i></div>
-            <span class="code-card__file">api/src/services/orden.service.js · (Haz clic en cualquier línea para inspeccionar)</span>
+            <span class="code-card__file">api/src/api/orden/services/custom-orden.js</span>
             <button type="button" class="btn-copy" data-copy-target="#codeService">Copiar Código</button>
           </div>
           <div class="code-card__content">
             <pre><code id="codeService">
 <div class="code-line" data-desc="Tasa estándar de Impuesto al Valor Agregado (12%)."><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">const</span> TASA_IVA = <span class="num">0.12</span>;</span></div>
-<div class="code-line" data-desc="Clase de Servicio que centraliza la lógica empresarial."><span class="code-line__num">2</span><span class="code-line__code"><span class="kw">export class</span> OrdenService {</span></div>
-<div class="code-line" data-desc="Cálculo matemático empresarial del IVA y total neto antes de guardar."><span class="code-line__num">3</span><span class="code-line__code">  <span class="kw">static async</span> <span class="fn">crear</span>(dto) {</span></div>
-<div class="code-line" data-desc="Calcula el 12% con redondeo a 2 decimales para precisión contable."><span class="code-line__num">4</span><span class="code-line__code">    <span class="kw">const</span> impuesto = <span class="fn">Number</span>((dto.monto * TASA_IVA).<span class="fn">toFixed</span>(<span class="num">2</span>));</span></div>
-<div class="code-line" data-desc="Suma subtotal + impuesto."><span class="code-line__num">5</span><span class="code-line__code">    <span class="kw">const</span> total = <span class="fn">Number</span>((dto.monto + impuesto).<span class="fn">toFixed</span>(<span class="num">2</span>));</span></div>
-<div class="code-line" data-desc="Delega la persistencia al modelo con los totales ya calculados."><span class="code-line__num">6</span><span class="code-line__code">    <span class="kw">return await</span> OrdenModel.<span class="fn">create</span>({ ...dto, impuesto, total });</span></div>
-<div class="code-line"><span class="code-line__num">7</span><span class="code-line__code">  }</span></div>
-<div class="code-line" data-desc="CUSTOM OMS: Ejecuta el cálculo previo en memoria sin tocar la base de datos (Dry-Run)."><span class="code-line__num">8</span><span class="code-line__code">  <span class="kw">static</span> <span class="fn">simularPreview</span>(payload) {</span></div>
-<div class="code-line" data-desc="Calcula los totales y devuelve un informe de estimación financiera al frontend."><span class="code-line__num">9</span><span class="code-line__code">    <span class="kw">const</span> subtotal = <span class="fn">Number</span>(payload.monto || <span class="num">0</span>);</span></div>
-<div class="code-line" data-desc="Retorna el resultado de la simulación con metadatos descriptivos."><span class="code-line__num">10</span><span class="code-line__code">    <span class="kw">return</span> { simulacion: <span class="bool">true</span>, totalesCalculados: { subtotal, total: subtotal * <span class="num">1.12</span> } };</span></div>
-<div class="code-line"><span class="code-line__num">11</span><span class="code-line__code">  }</span></div>
-<div class="code-line" data-desc="CUSTOM OMS: Expone la especificación de campos, tipos y enums para introspección dinámica."><span class="code-line__num">12</span><span class="code-line__code">  <span class="kw">static</span> <span class="fn">obtenerEsquema</span>() { <span class="kw">return</span> OrdenModel.<span class="fn">getSchema</span>(); }</span></div>
-<div class="code-line"><span class="code-line__num">13</span><span class="code-line__code">}</span></div>
+<div class="code-line"><span class="code-line__num">2</span><span class="code-line__code"></span></div>
+<div class="code-line" data-desc="En Strapi, los servicios exportan una función que recibe ({ strapi }) y retorna los métodos de negocio."><span class="code-line__num">3</span><span class="code-line__code"><span class="kw">export default</span> ({ strapi }) =&gt; ({</span></div>
+<div class="code-line" data-desc="Calcula IVA (12%) y total neto antes de guardar en la base de datos."><span class="code-line__num">4</span><span class="code-line__code">  <span class="kw">async</span> <span class="fn">create</span>(payload) {</span></div>
+<div class="code-line" data-desc="Cálculo contable con redondeo a 2 decimales"><span class="code-line__num">5</span><span class="code-line__code">    <span class="kw">const</span> subtotal = <span class="fn">Number</span>(payload.monto);</span></div>
+<div class="code-line" data-desc="Calcula el 12%"><span class="code-line__num">6</span><span class="code-line__code">    <span class="kw">const</span> impuesto = <span class="fn">Number</span>((subtotal * TASA_IVA).<span class="fn">toFixed</span>(<span class="num">2</span>));</span></div>
+<div class="code-line" data-desc="Total neto calculado"><span class="code-line__num">7</span><span class="code-line__code">    <span class="kw">const</span> total = <span class="fn">Number</span>((subtotal + impuesto).<span class="fn">toFixed</span>(<span class="num">2</span>));</span></div>
+<div class="code-line" data-desc="Persistencia a través del repositorio/modelo de Strapi"><span class="code-line__num">8</span><span class="code-line__code">    <span class="kw">return await</span> OrdenModel.<span class="fn">create</span>({ ...payload, impuesto, total });</span></div>
+<div class="code-line"><span class="code-line__num">9</span><span class="code-line__code">  },</span></div>
+<div class="code-line" data-desc="Simulación previa (Dry-Run): Realiza cálculos sin escribir en PostgreSQL"><span class="code-line__num">10</span><span class="code-line__code">  <span class="fn">preview</span>(payload) {</span></div>
+<div class="code-line" data-desc="Calcula los totales y devuelve el reporte previo al frontend"><span class="code-line__num">11</span><span class="code-line__code">    <span class="kw">const</span> subtotal = <span class="fn">Number</span>(payload.monto || <span class="num">0</span>);</span></div>
+<div class="code-line" data-desc="Retorna informe de simulación"><span class="code-line__num">12</span><span class="code-line__code">    <span class="kw">return</span> { simulacion: <span class="bool">true</span>, total: subtotal * <span class="num">1.12</span> };</span></div>
+<div class="code-line"><span class="code-line__num">13</span><span class="code-line__code">  }</span></div>
+<div class="code-line"><span class="code-line__num">14</span><span class="code-line__code">});</span></div>
             </code></pre>
           </div>
         </div>
@@ -656,47 +626,19 @@
       </section>
 
       <!-- ========================================================
-           CHECKPOINT 06: CONTROLADOR & RUTAS
+           CHECKPOINT 06: ENDPOINTS CUSTOM OMS
            ======================================================== -->
       <section id="cp-06" class="checkpoint-section">
         <header class="checkpoint-section__header">
           <div>
-            <div class="checkpoint-index">06 / CONTROLADOR, RUTAS & COOKIES · 5 MIN</div>
-            <h2>El Conector HTTP y la Auditoría con Cookies Seguras</h2>
+            <div class="checkpoint-index">06 / CUSTOM ENDPOINTS OMS · 4 MIN</div>
+            <h2>El Patrón `/preview` y `/schema` de OMS</h2>
           </div>
           <button type="button" class="btn" data-checkpoint-toggle="6">✓ Marcar como Completado</button>
         </header>
 
         <div class="concept-box">
-          <strong>Cookies Seguras en Backend:</strong> Al crear una orden, el controlador registra quién fue el último operador en una cookie HTTP con flags <code>httpOnly: true</code> (inmune a robo por JavaScript malicioso en el navegador / XSS) y <code>sameSite: 'lax'</code> (protección contra CSRF).
-        </div>
-
-        <div class="code-card">
-          <div class="code-card__bar">
-            <div class="code-card__dots"><i></i><i></i><i></i></div>
-            <span class="code-card__file">api/src/controllers/orden.controller.js · (Haz clic en cualquier línea para inspeccionar)</span>
-            <button type="button" class="btn-copy" data-copy-target="#codeController">Copiar Código</button>
-          </div>
-          <div class="code-card__content">
-            <pre><code id="codeController">
-<div class="code-line" data-desc="Método de controlador para manejar el endpoint POST /api/v1/oms/ordenes."><span class="code-line__num">1</span><span class="code-line__code"><span class="kw">static async</span> <span class="fn">crear</span>(req, res, next) {</span></div>
-<div class="code-line" data-desc="Siempre se envuelve en un bloque try/catch para atrapar cualquier error asíncrono y enviarlo a next(error)."><span class="code-line__num">2</span><span class="code-line__code">  <span class="kw">try</span> {</span></div>
-<div class="code-line" data-desc="Instancia el DTO con req.body. Aquí se descartan automáticamente todos los campos no permitidos."><span class="code-line__num">3</span><span class="code-line__code">    <span class="kw">const</span> dto = <span class="kw">new</span> <span class="fn">CrearOrdenDTO</span>(req.body);</span></div>
-<div class="code-line" data-desc="Invoca al servicio para persistir la orden y calcular impuestos."><span class="code-line__num">4</span><span class="code-line__code">    <span class="kw">const</span> nuevaOrden = <span class="kw">await</span> OrdenService.<span class="fn">crear</span>(dto);</span></div>
-<div class="code-line" data-desc="res.cookie() añade la cabecera Set-Cookie con flags de alta seguridad: httpOnly previene robo XSS y sameSite previene CSRF."><span class="code-line__num">5</span><span class="code-line__code">    res.<span class="fn">cookie</span>(<span class="str">"ultimoOperador"</span>, dto.operador, { httpOnly: <span class="bool">true</span>, sameSite: <span class="str">"lax"</span> });</span></div>
-<div class="code-line" data-desc="Emite el código de estado 201 (Created) con el documento JSON generado."><span class="code-line__num">6</span><span class="code-line__code">    res.<span class="fn">status</span>(<span class="num">201</span>).<span class="fn">json</span>({ mensaje: <span class="str">"Orden creada con éxito"</span>, data: nuevaOrden });</span></div>
-<div class="code-line" data-desc="Si ocurre un error, catch lo intercepta y next(error) lo transfiere al middleware central de errores sin botar el proceso Node."><span class="code-line__num">7</span><span class="code-line__code">  } <span class="kw">catch</span> (error) { <span class="fn">next</span>(error); }</span></div>
-<div class="code-line"><span class="code-line__num">8</span><span class="code-line__code">}</span></div>
-            </code></pre>
-          </div>
-        </div>
-
-        <div class="line-explainer-drawer">
-          <div class="line-explainer-header">
-            <div class="line-explainer-title">🔎 Inspector de Línea</div>
-            <span style="font-size:0.75rem; color:var(--text-dim);">Haz clic en otra línea para ver su explicación</span>
-          </div>
-          <div class="line-explainer-body"></div>
+          <strong>Por qué estos endpoints diferencian a OMS:</strong> En un sistema operativo como OMS, los usuarios necesitan previsualizar el cálculo de tarifas e impuestos antes de confirmar un trámite. El endpoint <code>POST /ordenes/preview</code> valida el payload y calcula el total sin generar registros en base de datos. Asimismo, <code>GET /ordenes/schema</code> entrega la definición dinámica de atributos para que el frontend no tenga formularios quemados en código estático.
         </div>
       </section>
 
@@ -707,13 +649,13 @@
         <header class="checkpoint-section__header">
           <div>
             <div class="checkpoint-index">07 / PRUEBAS NATIVAS NODE:TEST · 3 MIN</div>
-            <h2>Validación Automatizada sin Dependencias Externas</h2>
+            <h2>Validación Automatizada del API en Strapi</h2>
           </div>
           <button type="button" class="btn" data-checkpoint-toggle="7">✓ Marcar como Completado</button>
         </header>
 
         <div class="concept-box">
-          <strong>Velocidad y Limpieza:</strong> En lugar de instalar Jest (que requiere más de 50 MB de dependencias), Node.js moderno cuenta con <code>node:test</code> y <code>node:assert</code> nativos. Ejecuta 12 pruebas completas en menos de 400 milisegundos.
+          <strong>Suite de 12 Pruebas en 300ms:</strong> Verificamos endpoints de salud, SemVer, filtrado de ataques DTO, rechazos 400 Bad Request, cálculos de IVA (12%) y los endpoints especializados de Strapi en OMS.
         </div>
 
         <div class="task-callout" style="background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); padding:1rem; border-radius:var(--radius-md);">
@@ -723,55 +665,45 @@
       </section>
 
       <!-- ========================================================
-           GLOSARIO INTERACTIVO DE NODE.JS PARA ALUMNOS
+           GLOSARIO INTERACTIVO DE STRAPI & NODE
            ======================================================== -->
       <section id="glosario" class="checkpoint-section">
         <header class="checkpoint-section__header">
           <div>
             <div class="checkpoint-index">DICCIONARIO CONCEPTUAL</div>
-            <h2>📖 Glosario de Términos Node.js & Express para Estudiantes</h2>
+            <h2>📖 Glosario de Términos Strapi v5 & Node.js para Alumnos</h2>
           </div>
           <span class="checkpoint-stamp">GLOSARIO</span>
         </header>
 
         <div class="glossary-search-wrap">
-          <input type="text" id="glossaryInput" class="input-custom" style="width:100%; max-width:400px;" placeholder="🔍 Buscar término (ej: next, middleware, async, status)...">
+          <input type="text" id="glossaryInput" class="input-custom" style="width:100%; max-width:400px;" placeholder="🔍 Buscar término (ej: ctx, factories, schema, service, dto)...">
         </div>
 
         <div class="glossary-grid">
           <div class="glossary-card">
-            <div class="glossary-term">req (Request)</div>
-            <div class="glossary-def">Objeto que representa la petición HTTP que llega desde el cliente (navegador, cURL, frontend). Contiene <code>req.body</code>, <code>req.params</code>, <code>req.query</code>, <code>req.headers</code> y <code>req.cookies</code>.</div>
+            <div class="glossary-term">Koa Context (ctx)</div>
+            <div class="glossary-def">Objeto central de Koa y Strapi que encapsula la petición y la respuesta HTTP. En Strapi, para enviar datos basta con asignar <code>ctx.body = ...</code> y <code>ctx.status = 201</code>.</div>
           </div>
 
           <div class="glossary-card">
-            <div class="glossary-term">res (Response)</div>
-            <div class="glossary-def">Objeto que permite construir y enviar la respuesta al cliente. Métodos comunes: <code>res.status(codigo)</code>, <code>res.json(objeto)</code>, <code>res.send()</code> y <code>res.cookie()</code>.</div>
+            <div class="glossary-term">ctx.request.body.data</div>
+            <div class="glossary-def">Convención estándar de Strapi donde los payloads enviados por el cliente vienen envueltos dentro de una propiedad <code>data</code>. En los controladores se usa <code>ctx.request.body?.data ?? ctx.request.body</code> para dar soporte universal.</div>
           </div>
 
           <div class="glossary-card">
-            <div class="glossary-term">next()</div>
-            <div class="glossary-def">Función que le indica a Express que el middleware actual concluyó su tarea y que debe ceder el control al siguiente middleware en la cadena. Si le pasas un argumento como <code>next(error)</code>, salta directamente al manejador global de errores.</div>
+            <div class="glossary-term">Strapi Core Factories</div>
+            <div class="glossary-def">Funciones nativas de Strapi (<code>factories.createCoreRouter</code>, <code>factories.createCoreController</code>, <code>factories.createCoreService</code>) que generan el código base CRUD automáticamente para no reinventar la rueda.</div>
           </div>
 
           <div class="glossary-card">
-            <div class="glossary-term">Middleware</div>
-            <div class="glossary-def">Función intermedia que se ejecuta en el camino entre la llegada de la petición y la respuesta final. Se utiliza para logging, autenticación, parsing de JSON, validaciones de seguridad o inyección de cabeceras.</div>
+            <div class="glossary-term">strapi.service()</div>
+            <div class="glossary-def">Localizador de servicios de Strapi. Permite que cualquier controlador o tarea invoque la lógica de negocio de otra entidad mediante su identificador UID (ej: <code>strapi.service('api::orden.custom-orden')</code>).</div>
           </div>
 
           <div class="glossary-card">
-            <div class="glossary-term">app.use()</div>
-            <div class="glossary-def">Método de Express para registrar middlewares o sub-enrutadores. Puede aplicarse de forma global a todas las rutas o con un prefijo específico (como <code>app.use('/api/v1/oms', router)</code>).</div>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-term">express.Router()</div>
-            <div class="glossary-def">Crea un mini-enrutador aislado e independiente que permite agrupar rutas de una misma entidad en su propio archivo, desacoplando la definición de URLs del archivo principal <code>app.js</code>.</div>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-term">async / await</div>
-            <div class="glossary-def">Sintaxis moderna de JavaScript que facilita el trabajo con operaciones asíncronas (como consultas a base de datos o lectura de archivos) haciendo que el código parezca síncrono sin bloquear el Event Loop de Node.js.</div>
+            <div class="glossary-term">schema.json (Content-Type)</div>
+            <div class="glossary-def">Archivo declarativo donde se definen los atributos, tipos de datos, restricciones y relaciones de una entidad. Strapi lo lee para sincronizar las tablas de base de datos en PostgreSQL.</div>
           </div>
 
           <div class="glossary-card">
@@ -780,18 +712,8 @@
           </div>
 
           <div class="glossary-card">
-            <div class="glossary-term">HttpOnly Cookie</div>
-            <div class="glossary-def">Cookie HTTP marcada con el flag <code>HttpOnly</code>. Esta bandera impide que scripts de JavaScript en el navegador (como código inyectado por ataques XSS) lean o roben la cookie, manteniéndola protegida en el encabezado de red.</div>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-term">SemVer (Semantic Versioning)</div>
-            <div class="glossary-def">Convención estándar de versionado con formato <code>MAJOR.MINOR.PATCH</code> (ej: <code>1.0.0</code>). Comunica cambios que rompen compatibilidad (MAJOR), nuevas funcionalidades compatibles (MINOR) o correcciones de bugs (PATCH).</div>
-          </div>
-
-          <div class="glossary-card">
-            <div class="glossary-term">Graceful Shutdown</div>
-            <div class="glossary-def">Técnica de apagado ordenado donde el servidor captura señales del sistema operativo (<code>SIGINT</code>, <code>SIGTERM</code>), detiene la recepción de nuevas conexiones y espera a que las peticiones en curso terminen antes de matar el proceso Node.</div>
+            <div class="glossary-term">Dry-Run / Preview</div>
+            <div class="glossary-def">Técnica arquitectónica implementada en OMS donde se simula el cálculo financiero de una orden y se validan reglas de negocio en memoria sin persistir ningún dato en PostgreSQL.</div>
           </div>
 
           <div class="glossary-card">
