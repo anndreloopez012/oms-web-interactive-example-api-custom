@@ -1,0 +1,2952 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_package",
+      "community": 2,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "api_package_name",
+      "community": 2,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "api_package_version",
+      "community": 2,
+      "norm_label": "version"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "api_package_description",
+      "community": 2,
+      "norm_label": "description"
+    },
+    {
+      "label": "main",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "api_package_main",
+      "community": 2,
+      "norm_label": "main"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "api_package_type",
+      "community": 2,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "api_package_scripts",
+      "community": 2,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "api_package_scripts_dev",
+      "community": 2,
+      "norm_label": "dev"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "api_package_scripts_start",
+      "community": 2,
+      "norm_label": "start"
+    },
+    {
+      "label": "test",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "api_package_scripts_test",
+      "community": 2,
+      "norm_label": "test"
+    },
+    {
+      "label": "keywords",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "api_package_keywords",
+      "community": 2,
+      "norm_label": "keywords"
+    },
+    {
+      "label": "author",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "api_package_author",
+      "community": 2,
+      "norm_label": "author"
+    },
+    {
+      "label": "license",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "api_package_license",
+      "community": 2,
+      "norm_label": "license"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "api_package_dependencies",
+      "community": 2,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "cookie-parser",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "api_package_dependencies_cookie_parser",
+      "community": 2,
+      "norm_label": "cookie-parser"
+    },
+    {
+      "label": "cors",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "api_package_dependencies_cors",
+      "community": 2,
+      "norm_label": "cors"
+    },
+    {
+      "label": "express",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "api_package_dependencies_express",
+      "community": 2,
+      "norm_label": "express"
+    },
+    {
+      "label": "express-validator",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "api_package_dependencies_express_validator",
+      "community": 2,
+      "norm_label": "express-validator"
+    },
+    {
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "api/src/app.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app",
+      "community": 3,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "app",
+      "file_type": "code",
+      "source_file": "api/src/app.js",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "src_app_app",
+      "community": 3,
+      "norm_label": "app"
+    },
+    {
+      "label": "orden.controller.js",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_orden_controller",
+      "community": 1,
+      "norm_label": "orden.controller.js"
+    },
+    {
+      "label": "OrdenController",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller",
+      "community": 6,
+      "norm_label": "ordencontroller"
+    },
+    {
+      "label": ".listar()",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller_listar",
+      "community": 6,
+      "norm_label": ".listar()"
+    },
+    {
+      "label": ".obtenerPorId()",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller_obtenerporid",
+      "community": 6,
+      "norm_label": ".obtenerporid()"
+    },
+    {
+      "label": ".crear()",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller_crear",
+      "community": 6,
+      "norm_label": ".crear()"
+    },
+    {
+      "label": ".actualizar()",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller_actualizar",
+      "community": 6,
+      "norm_label": ".actualizar()"
+    },
+    {
+      "label": ".eliminar()",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller_eliminar",
+      "community": 6,
+      "norm_label": ".eliminar()"
+    },
+    {
+      "label": ".preview()",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller_preview",
+      "community": 6,
+      "norm_label": ".preview()"
+    },
+    {
+      "label": ".schema()",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller_schema",
+      "community": 6,
+      "norm_label": ".schema()"
+    },
+    {
+      "label": ".consultarSesion()",
+      "file_type": "code",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "controllers_orden_controller_ordencontroller_consultarsesion",
+      "community": 6,
+      "norm_label": ".consultarsesion()"
+    },
+    {
+      "label": "orden.dto.js",
+      "file_type": "code",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dtos_orden_dto",
+      "community": 1,
+      "norm_label": "orden.dto.js"
+    },
+    {
+      "label": "CrearOrdenDTO",
+      "file_type": "code",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "dtos_orden_dto_crearordendto",
+      "community": 1,
+      "norm_label": "crearordendto"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "dtos_orden_dto_crearordendto_constructor",
+      "community": 1,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "ActualizarOrdenDTO",
+      "file_type": "code",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "dtos_orden_dto_actualizarordendto",
+      "community": 1,
+      "norm_label": "actualizarordendto"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "dtos_orden_dto_actualizarordendto_constructor",
+      "community": 1,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "error.middleware.js",
+      "file_type": "code",
+      "source_file": "api/src/middlewares/error.middleware.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "middlewares_error_middleware",
+      "community": 3,
+      "norm_label": "error.middleware.js"
+    },
+    {
+      "label": "rutaNoEncontrada()",
+      "file_type": "code",
+      "source_file": "api/src/middlewares/error.middleware.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "middlewares_error_middleware_rutanoencontrada",
+      "community": 3,
+      "norm_label": "rutanoencontrada()"
+    },
+    {
+      "label": "manejarError()",
+      "file_type": "code",
+      "source_file": "api/src/middlewares/error.middleware.js",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "middlewares_error_middleware_manejarerror",
+      "community": 3,
+      "norm_label": "manejarerror()"
+    },
+    {
+      "label": "orden.model.js",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "models_orden_model",
+      "community": 1,
+      "norm_label": "orden.model.js"
+    },
+    {
+      "label": "ordenesDb",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenesdb",
+      "community": 1,
+      "norm_label": "ordenesdb"
+    },
+    {
+      "label": "ESQUEMA_ORDEN",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "models_orden_model_esquema_orden",
+      "community": 1,
+      "norm_label": "esquema_orden"
+    },
+    {
+      "label": "OrdenModel",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenmodel",
+      "community": 1,
+      "norm_label": "ordenmodel"
+    },
+    {
+      "label": ".find()",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenmodel_find",
+      "community": 1,
+      "norm_label": ".find()"
+    },
+    {
+      "label": ".findById()",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenmodel_findbyid",
+      "community": 1,
+      "norm_label": ".findbyid()"
+    },
+    {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenmodel_create",
+      "community": 1,
+      "norm_label": ".create()"
+    },
+    {
+      "label": ".findByIdAndUpdate()",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenmodel_findbyidandupdate",
+      "community": 1,
+      "norm_label": ".findbyidandupdate()"
+    },
+    {
+      "label": ".findByIdAndDelete()",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenmodel_findbyidanddelete",
+      "community": 1,
+      "norm_label": ".findbyidanddelete()"
+    },
+    {
+      "label": ".getSchema()",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L172",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenmodel_getschema",
+      "community": 1,
+      "norm_label": ".getschema()"
+    },
+    {
+      "label": "._reset()",
+      "file_type": "code",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L179",
+      "_origin": "ast",
+      "id": "models_orden_model_ordenmodel_reset",
+      "community": 1,
+      "norm_label": "._reset()"
+    },
+    {
+      "label": "orden.routes.js",
+      "file_type": "code",
+      "source_file": "api/src/routes/orden.routes.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "routes_orden_routes",
+      "community": 3,
+      "norm_label": "orden.routes.js"
+    },
+    {
+      "label": "ordenRouter",
+      "file_type": "code",
+      "source_file": "api/src/routes/orden.routes.js",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "routes_orden_routes_ordenrouter",
+      "community": 3,
+      "norm_label": "ordenrouter"
+    },
+    {
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "api/src/server.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_server",
+      "community": 3,
+      "norm_label": "server.js"
+    },
+    {
+      "label": "server",
+      "file_type": "code",
+      "source_file": "api/src/server.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "src_server_server",
+      "community": 3,
+      "norm_label": "server"
+    },
+    {
+      "label": "cerrarServidor()",
+      "file_type": "code",
+      "source_file": "api/src/server.js",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "src_server_cerrarservidor",
+      "community": 3,
+      "norm_label": "cerrarservidor()"
+    },
+    {
+      "label": "orden.service.js",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_orden_service",
+      "community": 1,
+      "norm_label": "orden.service.js"
+    },
+    {
+      "label": "OrdenService",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "services_orden_service_ordenservice",
+      "community": 7,
+      "norm_label": "ordenservice"
+    },
+    {
+      "label": ".listar()",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "services_orden_service_ordenservice_listar",
+      "community": 7,
+      "norm_label": ".listar()"
+    },
+    {
+      "label": ".obtenerPorId()",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "services_orden_service_ordenservice_obtenerporid",
+      "community": 7,
+      "norm_label": ".obtenerporid()"
+    },
+    {
+      "label": ".crear()",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "services_orden_service_ordenservice_crear",
+      "community": 7,
+      "norm_label": ".crear()"
+    },
+    {
+      "label": ".actualizar()",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "services_orden_service_ordenservice_actualizar",
+      "community": 7,
+      "norm_label": ".actualizar()"
+    },
+    {
+      "label": ".eliminar()",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "services_orden_service_ordenservice_eliminar",
+      "community": 7,
+      "norm_label": ".eliminar()"
+    },
+    {
+      "label": ".simularPreview()",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "services_orden_service_ordenservice_simularpreview",
+      "community": 7,
+      "norm_label": ".simularpreview()"
+    },
+    {
+      "label": ".obtenerEsquema()",
+      "file_type": "code",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "services_orden_service_ordenservice_obteneresquema",
+      "community": 7,
+      "norm_label": ".obteneresquema()"
+    },
+    {
+      "label": "orden.validator.js",
+      "file_type": "code",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "validators_orden_validator",
+      "community": 3,
+      "norm_label": "orden.validator.js"
+    },
+    {
+      "label": "SERVICIOS_PERMITIDOS",
+      "file_type": "code",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "validators_orden_validator_servicios_permitidos",
+      "community": 3,
+      "norm_label": "servicios_permitidos"
+    },
+    {
+      "label": "PRIORIDADES_PERMITIDAS",
+      "file_type": "code",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "validators_orden_validator_prioridades_permitidas",
+      "community": 3,
+      "norm_label": "prioridades_permitidas"
+    },
+    {
+      "label": "ESTADOS_PERMITIDOS",
+      "file_type": "code",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "validators_orden_validator_estados_permitidos",
+      "community": 3,
+      "norm_label": "estados_permitidos"
+    },
+    {
+      "label": "verificarErroresValidacion()",
+      "file_type": "code",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "validators_orden_validator_verificarerroresvalidacion",
+      "community": 3,
+      "norm_label": "verificarerroresvalidacion()"
+    },
+    {
+      "label": "validarCrearOrden",
+      "file_type": "code",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "validators_orden_validator_validarcrearorden",
+      "community": 3,
+      "norm_label": "validarcrearorden"
+    },
+    {
+      "label": "validarActualizarOrden",
+      "file_type": "code",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "validators_orden_validator_validaractualizarorden",
+      "community": 3,
+      "norm_label": "validaractualizarorden"
+    },
+    {
+      "label": "api.test.js",
+      "file_type": "code",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "test_api_test",
+      "community": 1,
+      "norm_label": "api.test.js"
+    },
+    {
+      "label": "withServer()",
+      "file_type": "code",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "test_api_test_withserver",
+      "community": 1,
+      "norm_label": "withserver()"
+    },
+    {
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app",
+      "community": 0,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "INITIAL_ORDERS",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "app_initial_orders",
+      "community": 0,
+      "norm_label": "initial_orders"
+    },
+    {
+      "label": "ESQUEMA_OMS",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "app_esquema_oms",
+      "community": 0,
+      "norm_label": "esquema_oms"
+    },
+    {
+      "label": "timerDisplay",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "app_timerdisplay",
+      "community": 0,
+      "norm_label": "timerdisplay"
+    },
+    {
+      "label": "timerToggle",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "app_timertoggle",
+      "community": 0,
+      "norm_label": "timertoggle"
+    },
+    {
+      "label": "timerReset",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "app_timerreset",
+      "community": 0,
+      "norm_label": "timerreset"
+    },
+    {
+      "label": "timerContainer",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "app_timercontainer",
+      "community": 0,
+      "norm_label": "timercontainer"
+    },
+    {
+      "label": "progressBar",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "app_progressbar",
+      "community": 0,
+      "norm_label": "progressbar"
+    },
+    {
+      "label": "progressPercent",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "app_progresspercent",
+      "community": 0,
+      "norm_label": "progresspercent"
+    },
+    {
+      "label": "toast",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "app_toast",
+      "community": 0,
+      "norm_label": "toast"
+    },
+    {
+      "label": "methodSelect",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "app_methodselect",
+      "community": 0,
+      "norm_label": "methodselect"
+    },
+    {
+      "label": "endpointSelect",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "app_endpointselect",
+      "community": 0,
+      "norm_label": "endpointselect"
+    },
+    {
+      "label": "payloadTextarea",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "app_payloadtextarea",
+      "community": 0,
+      "norm_label": "payloadtextarea"
+    },
+    {
+      "label": "btnSend",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "app_btnsend",
+      "community": 0,
+      "norm_label": "btnsend"
+    },
+    {
+      "label": "terminalOutput",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "app_terminaloutput",
+      "community": 0,
+      "norm_label": "terminaloutput"
+    },
+    {
+      "label": "responseOutput",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "app_responseoutput",
+      "community": 0,
+      "norm_label": "responseoutput"
+    },
+    {
+      "label": "statusBadge",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "app_statusbadge",
+      "community": 0,
+      "norm_label": "statusbadge"
+    },
+    {
+      "label": "cookieBadge",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "app_cookiebadge",
+      "community": 0,
+      "norm_label": "cookiebadge"
+    },
+    {
+      "label": "nodes",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "app_nodes",
+      "community": 0,
+      "norm_label": "nodes"
+    },
+    {
+      "label": "completedSteps",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "app_completedsteps",
+      "community": 0,
+      "norm_label": "completedsteps"
+    },
+    {
+      "label": "readStorage()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "app_readstorage",
+      "community": 0,
+      "norm_label": "readstorage()"
+    },
+    {
+      "label": "writeStorage()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "app_writestorage",
+      "community": 0,
+      "norm_label": "writestorage()"
+    },
+    {
+      "label": "showToast()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "app_showtoast",
+      "community": 0,
+      "norm_label": "showtoast()"
+    },
+    {
+      "label": "formatTime()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "app_formattime",
+      "community": 11,
+      "norm_label": "formattime()"
+    },
+    {
+      "label": "renderTimer()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "app_rendertimer",
+      "community": 11,
+      "norm_label": "rendertimer()"
+    },
+    {
+      "label": "startTimer()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "app_starttimer",
+      "community": 0,
+      "norm_label": "starttimer()"
+    },
+    {
+      "label": "pauseTimer()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "app_pausetimer",
+      "community": 0,
+      "norm_label": "pausetimer()"
+    },
+    {
+      "label": "updateProgressUI()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L173",
+      "_origin": "ast",
+      "id": "app_updateprogressui",
+      "community": 0,
+      "norm_label": "updateprogressui()"
+    },
+    {
+      "label": "PRESETS",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L220",
+      "_origin": "ast",
+      "id": "app_presets",
+      "community": 0,
+      "norm_label": "presets"
+    },
+    {
+      "label": "clearPipeline()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L293",
+      "_origin": "ast",
+      "id": "app_clearpipeline",
+      "community": 0,
+      "norm_label": "clearpipeline()"
+    },
+    {
+      "label": "logTrace()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L301",
+      "_origin": "ast",
+      "id": "app_logtrace",
+      "community": 0,
+      "norm_label": "logtrace()"
+    },
+    {
+      "label": "escapeHtml()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L306",
+      "_origin": "ast",
+      "id": "app_escapehtml",
+      "community": 10,
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "highlightJson()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L316",
+      "_origin": "ast",
+      "id": "app_highlightjson",
+      "community": 10,
+      "norm_label": "highlightjson()"
+    },
+    {
+      "label": "wait()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L333",
+      "_origin": "ast",
+      "id": "app_wait",
+      "community": 0,
+      "norm_label": "wait()"
+    },
+    {
+      "label": "glossaryInput",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L607",
+      "_origin": "ast",
+      "id": "app_glossaryinput",
+      "community": 0,
+      "norm_label": "glossaryinput"
+    },
+    {
+      "label": "savedCookie",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L648",
+      "_origin": "ast",
+      "id": "app_savedcookie",
+      "community": 0,
+      "norm_label": "savedcookie"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents",
+      "community": 8,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "Protocolo Multi-Agente (Antigravity, Codex & Claude) - oms-web-interactive-example-api-custom",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
+      "community": 8,
+      "norm_label": "protocolo multi-agente (antigravity, codex & claude) - oms-web-interactive-example-api-custom"
+    },
+    {
+      "label": "1. Identidad y Prop\u00f3sito del Repositorio",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "agents_1_identidad_y_prop\u00f3sito_del_repositorio",
+      "community": 8,
+      "norm_label": "1. identidad y proposito del repositorio"
+    },
+    {
+      "label": "2. Consumo de Memoria en Obsidian",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "agents_2_consumo_de_memoria_en_obsidian",
+      "community": 8,
+      "norm_label": "2. consumo de memoria en obsidian"
+    },
+    {
+      "label": "3. Sincronizaci\u00f3n Continua y Cierre de Cambios",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "agents_3_sincronizaci\u00f3n_continua_y_cierre_de_cambios",
+      "community": 8,
+      "norm_label": "3. sincronizacion continua y cierre de cambios"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 9,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "Directivas para Claude Code - oms-web-interactive-example-api-custom",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_directivas_para_claude_code_oms_web_interactive_example_api_custom",
+      "community": 9,
+      "norm_label": "directivas para claude code - oms-web-interactive-example-api-custom"
+    },
+    {
+      "label": "Comandos Esenciales",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "claude_comandos_esenciales",
+      "community": 9,
+      "norm_label": "comandos esenciales"
+    },
+    {
+      "label": "Reglas de Arquitectura",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "claude_reglas_de_arquitectura",
+      "community": 9,
+      "norm_label": "reglas de arquitectura"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 5,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "\ud83c\udfe2 OMS \u00b7 Web Interactive Example API Custom",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_oms_web_interactive_example_api_custom",
+      "community": 5,
+      "norm_label": "\ud83c\udfe2 oms \u00b7 web interactive example api custom"
+    },
+    {
+      "label": "\ud83c\udfaf \u00bfQu\u00e9 es este proyecto?",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "readme_qu\u00e9_es_este_proyecto",
+      "community": 5,
+      "norm_label": "\ud83c\udfaf \u00bfque es este proyecto?"
+    },
+    {
+      "label": "\ud83c\udfae Caracter\u00edsticas de la Gu\u00eda Interactiva",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "readme_caracter\u00edsticas_de_la_gu\u00eda_interactiva",
+      "community": 5,
+      "norm_label": "\ud83c\udfae caracteristicas de la guia interactiva"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f El Por Qu\u00e9 de los Archivos y la Arquitectura",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "readme_el_por_qu\u00e9_de_los_archivos_y_la_arquitectura",
+      "community": 5,
+      "norm_label": "\ud83c\udfdb\ufe0f el por que de los archivos y la arquitectura"
+    },
+    {
+      "label": "Tabla de Responsabilidades",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "readme_tabla_de_responsabilidades",
+      "community": 5,
+      "norm_label": "tabla de responsabilidades"
+    },
+    {
+      "label": "\u26a1 Ciclo de Vida de una Petici\u00f3n HTTP",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "readme_ciclo_de_vida_de_una_petici\u00f3n_http",
+      "community": 5,
+      "norm_label": "\u26a1 ciclo de vida de una peticion http"
+    },
+    {
+      "label": "\u23f1\ufe0f Ruta de Aprendizaje de 30 Minutos",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "readme_ruta_de_aprendizaje_de_30_minutos",
+      "community": 5,
+      "norm_label": "\u23f1\ufe0f ruta de aprendizaje de 30 minutos"
+    },
+    {
+      "label": "\ud83d\ude80 C\u00f3mo Iniciar la API Backend",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "readme_c\u00f3mo_iniciar_la_api_backend",
+      "community": 5,
+      "norm_label": "\ud83d\ude80 como iniciar la api backend"
+    },
+    {
+      "label": "\ud83d\udcc4 Licencia",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "readme_licencia",
+      "community": 5,
+      "norm_label": "\ud83d\udcc4 licencia"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_readme",
+      "community": 4,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "\u26a1 API REST Personalizada OMS (Backend Express Enterprise)",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
+      "community": 4,
+      "norm_label": "\u26a1 api rest personalizada oms (backend express enterprise)"
+    },
+    {
+      "label": "\ud83d\ude80 Inicio R\u00e1pido en 3 Pasos",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "api_readme_inicio_r\u00e1pido_en_3_pasos",
+      "community": 4,
+      "norm_label": "\ud83d\ude80 inicio rapido en 3 pasos"
+    },
+    {
+      "label": "\ud83d\udce1 Cat\u00e1logo de Endpoints",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "api_readme_cat\u00e1logo_de_endpoints",
+      "community": 4,
+      "norm_label": "\ud83d\udce1 catalogo de endpoints"
+    },
+    {
+      "label": "\ud83e\uddea Ejemplos cURL para Terminal",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "api_readme_ejemplos_curl_para_terminal",
+      "community": 4,
+      "norm_label": "\ud83e\uddea ejemplos curl para terminal"
+    },
+    {
+      "label": "1. Consultar estado y versi\u00f3n SemVer",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "api_readme_1_consultar_estado_y_versi\u00f3n_semver",
+      "community": 4,
+      "norm_label": "1. consultar estado y version semver"
+    },
+    {
+      "label": "2. Introspecci\u00f3n del Esquema Din\u00e1mico OMS",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "api_readme_2_introspecci\u00f3n_del_esquema_din\u00e1mico_oms",
+      "community": 4,
+      "norm_label": "2. introspeccion del esquema dinamico oms"
+    },
+    {
+      "label": "3. Simulaci\u00f3n Previa (Dry-Run / Preview)",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "api_readme_3_simulaci\u00f3n_previa_dry_run_preview",
+      "community": 4,
+      "norm_label": "3. simulacion previa (dry-run / preview)"
+    },
+    {
+      "label": "4. Crear una nueva orden con DTO y Cookie",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "api_readme_4_crear_una_nueva_orden_con_dto_y_cookie",
+      "community": 4,
+      "norm_label": "4. crear una nueva orden con dto y cookie"
+    },
+    {
+      "label": "5. Intentar inyectar campos no autorizados (Comprobaci\u00f3n de DTO)",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "api_readme_5_intentar_inyectar_campos_no_autorizados_comprobaci\u00f3n_de_dto",
+      "community": 4,
+      "norm_label": "5. intentar inyectar campos no autorizados (comprobacion de dto)"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f \u00bfPor qu\u00e9 esta estructura? (Clean Architecture para APIs)",
+      "file_type": "document",
+      "source_file": "api/README.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "api_readme_por_qu\u00e9_esta_estructura_clean_architecture_para_apis",
+      "community": 4,
+      "norm_label": "\ud83c\udfdb\ufe0f \u00bfpor que esta estructura? (clean architecture para apis)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_author",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_keywords",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "api_package",
+      "target": "api_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_cookie_parser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_cors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_express",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_express_validator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "middlewares_error_middleware",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "middlewares_error_middleware_manejarerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "middlewares_error_middleware_rutanoencontrada",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "routes_orden_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "routes_orden_routes_ordenrouter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/server.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "src_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "test_api_test",
+      "target": "src_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/server.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "test_api_test",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "controllers_orden_controller",
+      "target": "controllers_orden_controller_ordencontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "controllers_orden_controller",
+      "target": "dtos_orden_dto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "controllers_orden_controller",
+      "target": "dtos_orden_dto_actualizarordendto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "controllers_orden_controller",
+      "target": "dtos_orden_dto_crearordendto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "controllers_orden_controller",
+      "target": "services_orden_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "controllers_orden_controller",
+      "target": "services_orden_service_ordenservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/routes/orden.routes.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "routes_orden_routes",
+      "target": "controllers_orden_controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "controllers_orden_controller_ordencontroller",
+      "target": "controllers_orden_controller_ordencontroller_actualizar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "controllers_orden_controller_ordencontroller",
+      "target": "controllers_orden_controller_ordencontroller_consultarsesion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "controllers_orden_controller_ordencontroller",
+      "target": "controllers_orden_controller_ordencontroller_crear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "controllers_orden_controller_ordencontroller",
+      "target": "controllers_orden_controller_ordencontroller_eliminar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "controllers_orden_controller_ordencontroller",
+      "target": "controllers_orden_controller_ordencontroller_listar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "controllers_orden_controller_ordencontroller",
+      "target": "controllers_orden_controller_ordencontroller_obtenerporid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "controllers_orden_controller_ordencontroller",
+      "target": "controllers_orden_controller_ordencontroller_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/controllers/orden.controller.js",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "controllers_orden_controller_ordencontroller",
+      "target": "controllers_orden_controller_ordencontroller_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/routes/orden.routes.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "routes_orden_routes",
+      "target": "controllers_orden_controller_ordencontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "dtos_orden_dto",
+      "target": "dtos_orden_dto_actualizarordendto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "dtos_orden_dto",
+      "target": "dtos_orden_dto_crearordendto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "test_api_test",
+      "target": "dtos_orden_dto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "dtos_orden_dto_crearordendto",
+      "target": "dtos_orden_dto_crearordendto_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "test_api_test",
+      "target": "dtos_orden_dto_crearordendto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/dtos/orden.dto.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "dtos_orden_dto_actualizarordendto",
+      "target": "dtos_orden_dto_actualizarordendto_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "test_api_test",
+      "target": "dtos_orden_dto_actualizarordendto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/middlewares/error.middleware.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "middlewares_error_middleware",
+      "target": "middlewares_error_middleware_manejarerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/middlewares/error.middleware.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "middlewares_error_middleware",
+      "target": "middlewares_error_middleware_rutanoencontrada",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "models_orden_model",
+      "target": "models_orden_model_esquema_orden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "models_orden_model",
+      "target": "models_orden_model_ordenesdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "models_orden_model",
+      "target": "models_orden_model_ordenmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "services_orden_service",
+      "target": "models_orden_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "test_api_test",
+      "target": "models_orden_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "models_orden_model_ordenmodel",
+      "target": "models_orden_model_ordenmodel_create",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "models_orden_model_ordenmodel",
+      "target": "models_orden_model_ordenmodel_find",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "models_orden_model_ordenmodel",
+      "target": "models_orden_model_ordenmodel_findbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "models_orden_model_ordenmodel",
+      "target": "models_orden_model_ordenmodel_findbyidanddelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "models_orden_model_ordenmodel",
+      "target": "models_orden_model_ordenmodel_findbyidandupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L172",
+      "weight": 1.0,
+      "source": "models_orden_model_ordenmodel",
+      "target": "models_orden_model_ordenmodel_getschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "models_orden_model_ordenmodel",
+      "target": "models_orden_model_ordenmodel_reset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "services_orden_service",
+      "target": "models_orden_model_ordenmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "test_api_test",
+      "target": "models_orden_model_ordenmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/models/orden.model.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "models_orden_model_ordenmodel_findbyid",
+      "target": "models_orden_model_ordenmodel_find",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/routes/orden.routes.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "routes_orden_routes",
+      "target": "routes_orden_routes_ordenrouter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/routes/orden.routes.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "routes_orden_routes",
+      "target": "validators_orden_validator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/routes/orden.routes.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "routes_orden_routes",
+      "target": "validators_orden_validator_validaractualizarorden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/routes/orden.routes.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "routes_orden_routes",
+      "target": "validators_orden_validator_validarcrearorden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/server.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "src_server_cerrarservidor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/server.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_server",
+      "target": "src_server_server",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "services_orden_service",
+      "target": "services_orden_service_ordenservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice",
+      "target": "services_orden_service_ordenservice_actualizar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice",
+      "target": "services_orden_service_ordenservice_crear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice",
+      "target": "services_orden_service_ordenservice_eliminar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice",
+      "target": "services_orden_service_ordenservice_listar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice",
+      "target": "services_orden_service_ordenservice_obteneresquema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice",
+      "target": "services_orden_service_ordenservice_obtenerporid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice",
+      "target": "services_orden_service_ordenservice_simularpreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice_actualizar",
+      "target": "services_orden_service_ordenservice_obtenerporid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/services/orden.service.js",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "services_orden_service_ordenservice_eliminar",
+      "target": "services_orden_service_ordenservice_obtenerporid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "validators_orden_validator",
+      "target": "validators_orden_validator_estados_permitidos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "validators_orden_validator",
+      "target": "validators_orden_validator_prioridades_permitidas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "validators_orden_validator",
+      "target": "validators_orden_validator_servicios_permitidos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "validators_orden_validator",
+      "target": "validators_orden_validator_validaractualizarorden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "validators_orden_validator",
+      "target": "validators_orden_validator_validarcrearorden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/validators/orden.validator.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "validators_orden_validator",
+      "target": "validators_orden_validator_verificarerroresvalidacion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/test/api.test.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "test_api_test",
+      "target": "test_api_test_withserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_btnsend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L293",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_clearpipeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_completedsteps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_cookiebadge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_endpointselect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L306",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_esquema_oms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_formattime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L607",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_glossaryinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L316",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_highlightjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_initial_orders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L301",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_logtrace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_methodselect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_nodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_pausetimer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_payloadtextarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_presets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_progressbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_progresspercent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_readstorage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_rendertimer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_responseoutput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L648",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_savedcookie",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_showtoast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_starttimer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_statusbadge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_terminaloutput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_timercontainer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_timerdisplay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_timerreset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_timertoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_toast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_updateprogressui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L333",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_wait",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_writestorage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "app_rendertimer",
+      "target": "app_formattime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L317",
+      "weight": 1.0,
+      "source": "app_highlightjson",
+      "target": "app_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "agents",
+      "target": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
+      "target": "agents_1_identidad_y_prop\u00f3sito_del_repositorio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
+      "target": "agents_2_consumo_de_memoria_en_obsidian",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
+      "target": "agents_3_sincronizaci\u00f3n_continua_y_cierre_de_cambios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_directivas_para_claude_code_oms_web_interactive_example_api_custom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_directivas_para_claude_code_oms_web_interactive_example_api_custom",
+      "target": "claude_comandos_esenciales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude_directivas_para_claude_code_oms_web_interactive_example_api_custom",
+      "target": "claude_reglas_de_arquitectura",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_oms_web_interactive_example_api_custom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "readme_oms_web_interactive_example_api_custom",
+      "target": "readme_caracter\u00edsticas_de_la_gu\u00eda_interactiva",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "readme_oms_web_interactive_example_api_custom",
+      "target": "readme_ciclo_de_vida_de_una_petici\u00f3n_http",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "readme_oms_web_interactive_example_api_custom",
+      "target": "readme_c\u00f3mo_iniciar_la_api_backend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "readme_oms_web_interactive_example_api_custom",
+      "target": "readme_el_por_qu\u00e9_de_los_archivos_y_la_arquitectura",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "readme_oms_web_interactive_example_api_custom",
+      "target": "readme_licencia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "readme_oms_web_interactive_example_api_custom",
+      "target": "readme_qu\u00e9_es_este_proyecto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "readme_oms_web_interactive_example_api_custom",
+      "target": "readme_ruta_de_aprendizaje_de_30_minutos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "readme_el_por_qu\u00e9_de_los_archivos_y_la_arquitectura",
+      "target": "readme_tabla_de_responsabilidades",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "api_readme",
+      "target": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
+      "target": "api_readme_cat\u00e1logo_de_endpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
+      "target": "api_readme_ejemplos_curl_para_terminal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
+      "target": "api_readme_inicio_r\u00e1pido_en_3_pasos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
+      "target": "api_readme_por_qu\u00e9_esta_estructura_clean_architecture_para_apis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "api_readme_ejemplos_curl_para_terminal",
+      "target": "api_readme_1_consultar_estado_y_versi\u00f3n_semver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "api_readme_ejemplos_curl_para_terminal",
+      "target": "api_readme_2_introspecci\u00f3n_del_esquema_din\u00e1mico_oms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "api_readme_ejemplos_curl_para_terminal",
+      "target": "api_readme_3_simulaci\u00f3n_previa_dry_run_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "api_readme_ejemplos_curl_para_terminal",
+      "target": "api_readme_4_crear_una_nueva_orden_con_dto_y_cookie",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/README.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "api_readme_ejemplos_curl_para_terminal",
+      "target": "api_readme_5_intentar_inyectar_campos_no_autorizados_comprobaci\u00f3n_de_dto",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "6f4e6178118498e1c6ecc048345aef3f1aba9de5"
+}
