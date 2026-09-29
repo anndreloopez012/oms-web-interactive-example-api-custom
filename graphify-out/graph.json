@@ -184,6 +184,296 @@
       "norm_label": "express-validator"
     },
     {
+      "label": "custom-orden.js",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_custom_orden",
+      "community": 10,
+      "norm_label": "custom-orden.js"
+    },
+    {
+      "label": "getCustomService()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_getcustomservice",
+      "community": 10,
+      "norm_label": "getcustomservice()"
+    },
+    {
+      "label": "getPayload()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_getpayload",
+      "community": 10,
+      "norm_label": "getpayload()"
+    },
+    {
+      "label": "handleControllerError()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_handlecontrollererror",
+      "community": 10,
+      "norm_label": "handlecontrollererror()"
+    },
+    {
+      "label": "schema()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_schema",
+      "community": 10,
+      "norm_label": "schema()"
+    },
+    {
+      "label": "preview()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_preview",
+      "community": 10,
+      "norm_label": "preview()"
+    },
+    {
+      "label": "sesion()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_sesion",
+      "community": 10,
+      "norm_label": "sesion()"
+    },
+    {
+      "label": "list()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_list",
+      "community": 10,
+      "norm_label": "list()"
+    },
+    {
+      "label": "findOne()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_findone",
+      "community": 10,
+      "norm_label": "findone()"
+    },
+    {
+      "label": "create()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_create",
+      "community": 10,
+      "norm_label": "create()"
+    },
+    {
+      "label": "update()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_update",
+      "community": 10,
+      "norm_label": "update()"
+    },
+    {
+      "label": "delete()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L163",
+      "_origin": "ast",
+      "id": "controllers_custom_orden_delete",
+      "community": 10,
+      "norm_label": "delete()"
+    },
+    {
+      "label": "orden.js",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/controllers/orden.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_orden",
+      "community": 13,
+      "norm_label": "orden.js"
+    },
+    {
+      "label": "orden.dto.js",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto",
+      "community": 11,
+      "norm_label": "orden.dto.js"
+    },
+    {
+      "label": "CrearOrdenDTO",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_crearordendto",
+      "community": 11,
+      "norm_label": "crearordendto"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_crearordendto_constructor",
+      "community": 11,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "ActualizarOrdenDTO",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto",
+      "community": 11,
+      "norm_label": "actualizarordendto"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto_constructor",
+      "community": 11,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "custom-orden.js",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/routes/custom-orden.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "routes_custom_orden",
+      "community": 14,
+      "norm_label": "custom-orden.js"
+    },
+    {
+      "label": "orden.js",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/routes/orden.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "routes_orden",
+      "community": 15,
+      "norm_label": "orden.js"
+    },
+    {
+      "label": "custom-orden.js",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_custom_orden",
+      "community": 1,
+      "norm_label": "custom-orden.js"
+    },
+    {
+      "label": "schema()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "services_custom_orden_schema",
+      "community": 1,
+      "norm_label": "schema()"
+    },
+    {
+      "label": "preview()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "services_custom_orden_preview",
+      "community": 1,
+      "norm_label": "preview()"
+    },
+    {
+      "label": "list()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "services_custom_orden_list",
+      "community": 1,
+      "norm_label": "list()"
+    },
+    {
+      "label": "findOne()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "services_custom_orden_findone",
+      "community": 1,
+      "norm_label": "findone()"
+    },
+    {
+      "label": "create()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "services_custom_orden_create",
+      "community": 1,
+      "norm_label": "create()"
+    },
+    {
+      "label": "update()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "services_custom_orden_update",
+      "community": 1,
+      "norm_label": "update()"
+    },
+    {
+      "label": "delete()",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "services_custom_orden_delete",
+      "community": 1,
+      "norm_label": "delete()"
+    },
+    {
+      "label": "orden.js",
+      "file_type": "code",
+      "source_file": "api/src/api/orden/services/orden.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_orden",
+      "community": 16,
+      "norm_label": "orden.js"
+    },
+    {
       "label": "app.js",
       "file_type": "code",
       "source_file": "api/src/app.js",
@@ -210,7 +500,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "controllers_orden_controller",
-      "community": 1,
+      "community": 7,
       "norm_label": "orden.controller.js"
     },
     {
@@ -309,8 +599,8 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "dtos_orden_dto",
-      "community": 1,
+      "id": "api_src_dtos_orden_dto_js_dtos_orden_dto",
+      "community": 12,
       "norm_label": "orden.dto.js"
     },
     {
@@ -319,8 +609,8 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "dtos_orden_dto_crearordendto",
-      "community": 1,
+      "id": "api_src_dtos_orden_dto_js_dtos_orden_dto_crearordendto",
+      "community": 12,
       "norm_label": "crearordendto"
     },
     {
@@ -329,8 +619,8 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "dtos_orden_dto_crearordendto_constructor",
-      "community": 1,
+      "id": "api_src_dtos_orden_dto_js_dtos_orden_dto_crearordendto_constructor",
+      "community": 12,
       "norm_label": ".constructor()"
     },
     {
@@ -339,8 +629,8 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L41",
       "_origin": "ast",
-      "id": "dtos_orden_dto_actualizarordendto",
-      "community": 1,
+      "id": "api_src_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto",
+      "community": 12,
       "norm_label": "actualizarordendto"
     },
     {
@@ -349,8 +639,8 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "dtos_orden_dto_actualizarordendto_constructor",
-      "community": 1,
+      "id": "api_src_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto_constructor",
+      "community": 12,
       "norm_label": ".constructor()"
     },
     {
@@ -550,7 +840,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "services_orden_service",
-      "community": 1,
+      "community": 7,
       "norm_label": "orden.service.js"
     },
     {
@@ -710,7 +1000,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "test_api_test",
-      "community": 1,
+      "community": 3,
       "norm_label": "api.test.js"
     },
     {
@@ -720,7 +1010,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "test_api_test_withserver",
-      "community": 1,
+      "community": 3,
       "norm_label": "withserver()"
     },
     {
@@ -737,7 +1027,7 @@
       "label": "INITIAL_ORDERS",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L12",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "app_initial_orders",
       "community": 0,
@@ -747,7 +1037,7 @@
       "label": "ESQUEMA_OMS",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "app_esquema_oms",
       "community": 0,
@@ -757,7 +1047,7 @@
       "label": "timerDisplay",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L64",
+      "source_location": "L65",
       "_origin": "ast",
       "id": "app_timerdisplay",
       "community": 0,
@@ -767,7 +1057,7 @@
       "label": "timerToggle",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L65",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "app_timertoggle",
       "community": 0,
@@ -777,7 +1067,7 @@
       "label": "timerReset",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L66",
+      "source_location": "L67",
       "_origin": "ast",
       "id": "app_timerreset",
       "community": 0,
@@ -787,7 +1077,7 @@
       "label": "timerContainer",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L67",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "app_timercontainer",
       "community": 0,
@@ -797,7 +1087,7 @@
       "label": "progressBar",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L68",
+      "source_location": "L69",
       "_origin": "ast",
       "id": "app_progressbar",
       "community": 0,
@@ -807,7 +1097,7 @@
       "label": "progressPercent",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L69",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "app_progresspercent",
       "community": 0,
@@ -817,7 +1107,7 @@
       "label": "toast",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L70",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "app_toast",
       "community": 0,
@@ -827,7 +1117,7 @@
       "label": "methodSelect",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L73",
+      "source_location": "L74",
       "_origin": "ast",
       "id": "app_methodselect",
       "community": 0,
@@ -837,7 +1127,7 @@
       "label": "endpointSelect",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L74",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "app_endpointselect",
       "community": 0,
@@ -847,7 +1137,7 @@
       "label": "payloadTextarea",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L75",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "app_payloadtextarea",
       "community": 0,
@@ -857,7 +1147,7 @@
       "label": "btnSend",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L76",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "app_btnsend",
       "community": 0,
@@ -867,7 +1157,7 @@
       "label": "terminalOutput",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L77",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "app_terminaloutput",
       "community": 0,
@@ -877,7 +1167,7 @@
       "label": "responseOutput",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L78",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "app_responseoutput",
       "community": 0,
@@ -887,7 +1177,7 @@
       "label": "statusBadge",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L79",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "app_statusbadge",
       "community": 0,
@@ -897,7 +1187,7 @@
       "label": "cookieBadge",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L80",
+      "source_location": "L81",
       "_origin": "ast",
       "id": "app_cookiebadge",
       "community": 0,
@@ -907,7 +1197,7 @@
       "label": "nodes",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L83",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "app_nodes",
       "community": 0,
@@ -917,7 +1207,7 @@
       "label": "completedSteps",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L96",
+      "source_location": "L97",
       "_origin": "ast",
       "id": "app_completedsteps",
       "community": 0,
@@ -927,7 +1217,7 @@
       "label": "readStorage()",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L98",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "app_readstorage",
       "community": 0,
@@ -937,7 +1227,7 @@
       "label": "writeStorage()",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L107",
+      "source_location": "L108",
       "_origin": "ast",
       "id": "app_writestorage",
       "community": 0,
@@ -947,7 +1237,7 @@
       "label": "showToast()",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L115",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "app_showtoast",
       "community": 0,
@@ -960,7 +1250,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "app_formattime",
-      "community": 11,
+      "community": 0,
       "norm_label": "formattime()"
     },
     {
@@ -970,7 +1260,7 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "app_rendertimer",
-      "community": 11,
+      "community": 0,
       "norm_label": "rendertimer()"
     },
     {
@@ -1017,7 +1307,7 @@
       "label": "clearPipeline()",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L293",
+      "source_location": "L302",
       "_origin": "ast",
       "id": "app_clearpipeline",
       "community": 0,
@@ -1027,7 +1317,7 @@
       "label": "logTrace()",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L301",
+      "source_location": "L310",
       "_origin": "ast",
       "id": "app_logtrace",
       "community": 0,
@@ -1037,37 +1327,97 @@
       "label": "escapeHtml()",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L306",
+      "source_location": "L317",
       "_origin": "ast",
       "id": "app_escapehtml",
-      "community": 10,
+      "community": 0,
       "norm_label": "escapehtml()"
     },
     {
       "label": "highlightJson()",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L316",
+      "source_location": "L327",
       "_origin": "ast",
       "id": "app_highlightjson",
-      "community": 10,
+      "community": 0,
       "norm_label": "highlightjson()"
     },
     {
       "label": "wait()",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L333",
+      "source_location": "L344",
       "_origin": "ast",
       "id": "app_wait",
       "community": 0,
       "norm_label": "wait()"
     },
     {
+      "label": "scaffolderForm",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L618",
+      "_origin": "ast",
+      "id": "app_scaffolderform",
+      "community": 0,
+      "norm_label": "scaffolderform"
+    },
+    {
+      "label": "currentScaffoldData",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L627",
+      "_origin": "ast",
+      "id": "app_currentscaffolddata",
+      "community": 0,
+      "norm_label": "currentscaffolddata"
+    },
+    {
+      "label": "generateStrapiFiles()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L635",
+      "_origin": "ast",
+      "id": "app_generatestrapifiles",
+      "community": 0,
+      "norm_label": "generatestrapifiles()"
+    },
+    {
+      "label": "renderScaffoldView()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L750",
+      "_origin": "ast",
+      "id": "app_renderscaffoldview",
+      "community": 0,
+      "norm_label": "renderscaffoldview()"
+    },
+    {
+      "label": "quizScore",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L787",
+      "_origin": "ast",
+      "id": "app_quizscore",
+      "community": 0,
+      "norm_label": "quizscore"
+    },
+    {
+      "label": "cheatsheetInput",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L824",
+      "_origin": "ast",
+      "id": "app_cheatsheetinput",
+      "community": 0,
+      "norm_label": "cheatsheetinput"
+    },
+    {
       "label": "glossaryInput",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L607",
+      "source_location": "L833",
       "_origin": "ast",
       "id": "app_glossaryinput",
       "community": 0,
@@ -1077,7 +1427,7 @@
       "label": "savedCookie",
       "file_type": "code",
       "source_file": "app.js",
-      "source_location": "L648",
+      "source_location": "L872",
       "_origin": "ast",
       "id": "app_savedcookie",
       "community": 0,
@@ -1391,9 +1741,9 @@
       "source_file": "api/package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_author",
-      "confidence_score": 1.0
+      "target": "api_package_author"
     },
     {
       "relation": "contains",
@@ -1401,9 +1751,9 @@
       "source_file": "api/package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_dependencies",
-      "confidence_score": 1.0
+      "target": "api_package_dependencies"
     },
     {
       "relation": "contains",
@@ -1411,9 +1761,9 @@
       "source_file": "api/package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_description",
-      "confidence_score": 1.0
+      "target": "api_package_description"
     },
     {
       "relation": "contains",
@@ -1421,9 +1771,9 @@
       "source_file": "api/package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_keywords",
-      "confidence_score": 1.0
+      "target": "api_package_keywords"
     },
     {
       "relation": "contains",
@@ -1431,9 +1781,9 @@
       "source_file": "api/package.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_license",
-      "confidence_score": 1.0
+      "target": "api_package_license"
     },
     {
       "relation": "contains",
@@ -1441,9 +1791,9 @@
       "source_file": "api/package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_main",
-      "confidence_score": 1.0
+      "target": "api_package_main"
     },
     {
       "relation": "contains",
@@ -1451,9 +1801,9 @@
       "source_file": "api/package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_name",
-      "confidence_score": 1.0
+      "target": "api_package_name"
     },
     {
       "relation": "contains",
@@ -1461,9 +1811,9 @@
       "source_file": "api/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_scripts",
-      "confidence_score": 1.0
+      "target": "api_package_scripts"
     },
     {
       "relation": "contains",
@@ -1471,9 +1821,9 @@
       "source_file": "api/package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_type",
-      "confidence_score": 1.0
+      "target": "api_package_type"
     },
     {
       "relation": "contains",
@@ -1481,9 +1831,9 @@
       "source_file": "api/package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package",
-      "target": "api_package_version",
-      "confidence_score": 1.0
+      "target": "api_package_version"
     },
     {
       "relation": "contains",
@@ -1491,9 +1841,9 @@
       "source_file": "api/package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -1501,9 +1851,9 @@
       "source_file": "api/package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_start",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_start"
     },
     {
       "relation": "contains",
@@ -1511,9 +1861,9 @@
       "source_file": "api/package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_scripts",
-      "target": "api_package_scripts_test",
-      "confidence_score": 1.0
+      "target": "api_package_scripts_test"
     },
     {
       "relation": "contains",
@@ -1521,9 +1871,9 @@
       "source_file": "api/package.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_dependencies",
-      "target": "api_package_dependencies_cookie_parser",
-      "confidence_score": 1.0
+      "target": "api_package_dependencies_cookie_parser"
     },
     {
       "relation": "contains",
@@ -1531,9 +1881,9 @@
       "source_file": "api/package.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_dependencies",
-      "target": "api_package_dependencies_cors",
-      "confidence_score": 1.0
+      "target": "api_package_dependencies_cors"
     },
     {
       "relation": "contains",
@@ -1541,9 +1891,9 @@
       "source_file": "api/package.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_dependencies",
-      "target": "api_package_dependencies_express",
-      "confidence_score": 1.0
+      "target": "api_package_dependencies_express"
     },
     {
       "relation": "contains",
@@ -1551,9 +1901,460 @@
       "source_file": "api/package.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_package_dependencies",
-      "target": "api_package_dependencies_express_validator",
-      "confidence_score": 1.0
+      "target": "api_package_dependencies_express_validator"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_create"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_delete"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_findone"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_getcustomservice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_getpayload"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_handlecontrollererror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_list"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_schema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_sesion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden",
+      "target": "controllers_custom_orden_update"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_create",
+      "target": "controllers_custom_orden_getcustomservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_delete",
+      "target": "controllers_custom_orden_getcustomservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_findone",
+      "target": "controllers_custom_orden_getcustomservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_list",
+      "target": "controllers_custom_orden_getcustomservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_preview",
+      "target": "controllers_custom_orden_getcustomservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_schema",
+      "target": "controllers_custom_orden_getcustomservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_update",
+      "target": "controllers_custom_orden_getcustomservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_create",
+      "target": "controllers_custom_orden_getpayload"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_preview",
+      "target": "controllers_custom_orden_getpayload"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L146",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_update",
+      "target": "controllers_custom_orden_getpayload"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_create",
+      "target": "controllers_custom_orden_handlecontrollererror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_delete",
+      "target": "controllers_custom_orden_handlecontrollererror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_findone",
+      "target": "controllers_custom_orden_handlecontrollererror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_list",
+      "target": "controllers_custom_orden_handlecontrollererror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_preview",
+      "target": "controllers_custom_orden_handlecontrollererror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_schema",
+      "target": "controllers_custom_orden_handlecontrollererror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/controllers/custom-orden.js",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_custom_orden_update",
+      "target": "controllers_custom_orden_handlecontrollererror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto",
+      "target": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto",
+      "target": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_crearordendto"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_crearordendto",
+      "target": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_crearordendto_constructor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/dtos/orden.dto.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto",
+      "target": "api_src_api_orden_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto_constructor"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "models_orden_model"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "models_orden_model_ordenmodel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "services_custom_orden_create"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "services_custom_orden_delete"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "services_custom_orden_findone"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "services_custom_orden_list"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "services_custom_orden_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "services_custom_orden_schema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden",
+      "target": "services_custom_orden_update"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden_delete",
+      "target": "services_custom_orden_findone"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/api/orden/services/custom-orden.js",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_custom_orden_update",
+      "target": "services_custom_orden_findone"
     },
     {
       "relation": "imports_from",
@@ -1562,9 +2363,9 @@
       "source_file": "api/src/app.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "middlewares_error_middleware",
-      "confidence_score": 1.0
+      "target": "middlewares_error_middleware"
     },
     {
       "relation": "imports",
@@ -1573,9 +2374,9 @@
       "source_file": "api/src/app.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "middlewares_error_middleware_manejarerror",
-      "confidence_score": 1.0
+      "target": "middlewares_error_middleware_manejarerror"
     },
     {
       "relation": "imports",
@@ -1584,9 +2385,9 @@
       "source_file": "api/src/app.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "middlewares_error_middleware_rutanoencontrada",
-      "confidence_score": 1.0
+      "target": "middlewares_error_middleware_rutanoencontrada"
     },
     {
       "relation": "imports_from",
@@ -1595,9 +2396,9 @@
       "source_file": "api/src/app.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "routes_orden_routes",
-      "confidence_score": 1.0
+      "target": "routes_orden_routes"
     },
     {
       "relation": "imports",
@@ -1606,9 +2407,9 @@
       "source_file": "api/src/app.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "routes_orden_routes_ordenrouter",
-      "confidence_score": 1.0
+      "target": "routes_orden_routes_ordenrouter"
     },
     {
       "relation": "contains",
@@ -1616,9 +2417,9 @@
       "source_file": "api/src/app.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "imports_from",
@@ -1627,9 +2428,9 @@
       "source_file": "api/src/server.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "src_app",
-      "confidence_score": 1.0
+      "target": "src_app"
     },
     {
       "relation": "imports_from",
@@ -1638,9 +2439,9 @@
       "source_file": "api/test/api.test.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_api_test",
-      "target": "src_app",
-      "confidence_score": 1.0
+      "target": "src_app"
     },
     {
       "relation": "imports",
@@ -1649,9 +2450,9 @@
       "source_file": "api/src/server.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "imports",
@@ -1660,9 +2461,9 @@
       "source_file": "api/test/api.test.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_api_test",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "contains",
@@ -1670,42 +2471,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller",
-      "target": "controllers_orden_controller_ordencontroller",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "api/src/controllers/orden.controller.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "controllers_orden_controller",
-      "target": "dtos_orden_dto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "api/src/controllers/orden.controller.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "controllers_orden_controller",
-      "target": "dtos_orden_dto_actualizarordendto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "api/src/controllers/orden.controller.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "controllers_orden_controller",
-      "target": "dtos_orden_dto_crearordendto",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller"
     },
     {
       "relation": "imports_from",
@@ -1714,9 +2482,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller",
-      "target": "services_orden_service",
-      "confidence_score": 1.0
+      "target": "services_orden_service"
     },
     {
       "relation": "imports",
@@ -1725,9 +2493,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller",
-      "target": "services_orden_service_ordenservice",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice"
     },
     {
       "relation": "imports_from",
@@ -1736,9 +2504,9 @@
       "source_file": "api/src/routes/orden.routes.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routes_orden_routes",
-      "target": "controllers_orden_controller",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller"
     },
     {
       "relation": "method",
@@ -1746,9 +2514,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller_ordencontroller",
-      "target": "controllers_orden_controller_ordencontroller_actualizar",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller_actualizar"
     },
     {
       "relation": "method",
@@ -1756,9 +2524,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller_ordencontroller",
-      "target": "controllers_orden_controller_ordencontroller_consultarsesion",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller_consultarsesion"
     },
     {
       "relation": "method",
@@ -1766,9 +2534,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller_ordencontroller",
-      "target": "controllers_orden_controller_ordencontroller_crear",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller_crear"
     },
     {
       "relation": "method",
@@ -1776,9 +2544,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller_ordencontroller",
-      "target": "controllers_orden_controller_ordencontroller_eliminar",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller_eliminar"
     },
     {
       "relation": "method",
@@ -1786,9 +2554,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller_ordencontroller",
-      "target": "controllers_orden_controller_ordencontroller_listar",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller_listar"
     },
     {
       "relation": "method",
@@ -1796,9 +2564,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller_ordencontroller",
-      "target": "controllers_orden_controller_ordencontroller_obtenerporid",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller_obtenerporid"
     },
     {
       "relation": "method",
@@ -1806,9 +2574,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller_ordencontroller",
-      "target": "controllers_orden_controller_ordencontroller_preview",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller_preview"
     },
     {
       "relation": "method",
@@ -1816,9 +2584,9 @@
       "source_file": "api/src/controllers/orden.controller.js",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_orden_controller_ordencontroller",
-      "target": "controllers_orden_controller_ordencontroller_schema",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller_schema"
     },
     {
       "relation": "imports",
@@ -1827,9 +2595,9 @@
       "source_file": "api/src/routes/orden.routes.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routes_orden_routes",
-      "target": "controllers_orden_controller_ordencontroller",
-      "confidence_score": 1.0
+      "target": "controllers_orden_controller_ordencontroller"
     },
     {
       "relation": "contains",
@@ -1837,9 +2605,9 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L41",
       "weight": 1.0,
-      "source": "dtos_orden_dto",
-      "target": "dtos_orden_dto_actualizarordendto",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "api_src_dtos_orden_dto_js_dtos_orden_dto",
+      "target": "api_src_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto"
     },
     {
       "relation": "contains",
@@ -1847,20 +2615,9 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L12",
       "weight": 1.0,
-      "source": "dtos_orden_dto",
-      "target": "dtos_orden_dto_crearordendto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "api/test/api.test.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "test_api_test",
-      "target": "dtos_orden_dto",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "api_src_dtos_orden_dto_js_dtos_orden_dto",
+      "target": "api_src_dtos_orden_dto_js_dtos_orden_dto_crearordendto"
     },
     {
       "relation": "method",
@@ -1868,20 +2625,9 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L13",
       "weight": 1.0,
-      "source": "dtos_orden_dto_crearordendto",
-      "target": "dtos_orden_dto_crearordendto_constructor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "api/test/api.test.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "test_api_test",
-      "target": "dtos_orden_dto_crearordendto",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "api_src_dtos_orden_dto_js_dtos_orden_dto_crearordendto",
+      "target": "api_src_dtos_orden_dto_js_dtos_orden_dto_crearordendto_constructor"
     },
     {
       "relation": "method",
@@ -1889,20 +2635,9 @@
       "source_file": "api/src/dtos/orden.dto.js",
       "source_location": "L42",
       "weight": 1.0,
-      "source": "dtos_orden_dto_actualizarordendto",
-      "target": "dtos_orden_dto_actualizarordendto_constructor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "api/test/api.test.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "test_api_test",
-      "target": "dtos_orden_dto_actualizarordendto",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "api_src_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto",
+      "target": "api_src_dtos_orden_dto_js_dtos_orden_dto_actualizarordendto_constructor"
     },
     {
       "relation": "contains",
@@ -1910,9 +2645,9 @@
       "source_file": "api/src/middlewares/error.middleware.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "middlewares_error_middleware",
-      "target": "middlewares_error_middleware_manejarerror",
-      "confidence_score": 1.0
+      "target": "middlewares_error_middleware_manejarerror"
     },
     {
       "relation": "contains",
@@ -1920,9 +2655,9 @@
       "source_file": "api/src/middlewares/error.middleware.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "middlewares_error_middleware",
-      "target": "middlewares_error_middleware_rutanoencontrada",
-      "confidence_score": 1.0
+      "target": "middlewares_error_middleware_rutanoencontrada"
     },
     {
       "relation": "contains",
@@ -1930,9 +2665,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model",
-      "target": "models_orden_model_esquema_orden",
-      "confidence_score": 1.0
+      "target": "models_orden_model_esquema_orden"
     },
     {
       "relation": "contains",
@@ -1940,9 +2675,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model",
-      "target": "models_orden_model_ordenesdb",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenesdb"
     },
     {
       "relation": "contains",
@@ -1950,9 +2685,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model",
-      "target": "models_orden_model_ordenmodel",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel"
     },
     {
       "relation": "imports_from",
@@ -1961,9 +2696,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service",
-      "target": "models_orden_model",
-      "confidence_score": 1.0
+      "target": "models_orden_model"
     },
     {
       "relation": "imports_from",
@@ -1972,9 +2707,9 @@
       "source_file": "api/test/api.test.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_api_test",
-      "target": "models_orden_model",
-      "confidence_score": 1.0
+      "target": "models_orden_model"
     },
     {
       "relation": "method",
@@ -1982,9 +2717,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model_ordenmodel",
-      "target": "models_orden_model_ordenmodel_create",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel_create"
     },
     {
       "relation": "method",
@@ -1992,9 +2727,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model_ordenmodel",
-      "target": "models_orden_model_ordenmodel_find",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel_find"
     },
     {
       "relation": "method",
@@ -2002,9 +2737,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model_ordenmodel",
-      "target": "models_orden_model_ordenmodel_findbyid",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel_findbyid"
     },
     {
       "relation": "method",
@@ -2012,9 +2747,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model_ordenmodel",
-      "target": "models_orden_model_ordenmodel_findbyidanddelete",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel_findbyidanddelete"
     },
     {
       "relation": "method",
@@ -2022,9 +2757,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model_ordenmodel",
-      "target": "models_orden_model_ordenmodel_findbyidandupdate",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel_findbyidandupdate"
     },
     {
       "relation": "method",
@@ -2032,9 +2767,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model_ordenmodel",
-      "target": "models_orden_model_ordenmodel_getschema",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel_getschema"
     },
     {
       "relation": "method",
@@ -2042,9 +2777,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model_ordenmodel",
-      "target": "models_orden_model_ordenmodel_reset",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel_reset"
     },
     {
       "relation": "imports",
@@ -2053,9 +2788,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service",
-      "target": "models_orden_model_ordenmodel",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel"
     },
     {
       "relation": "imports",
@@ -2064,9 +2799,9 @@
       "source_file": "api/test/api.test.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_api_test",
-      "target": "models_orden_model_ordenmodel",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel"
     },
     {
       "relation": "calls",
@@ -2075,9 +2810,9 @@
       "source_file": "api/src/models/orden.model.js",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_orden_model_ordenmodel_findbyid",
-      "target": "models_orden_model_ordenmodel_find",
-      "confidence_score": 1.0
+      "target": "models_orden_model_ordenmodel_find"
     },
     {
       "relation": "contains",
@@ -2085,9 +2820,9 @@
       "source_file": "api/src/routes/orden.routes.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routes_orden_routes",
-      "target": "routes_orden_routes_ordenrouter",
-      "confidence_score": 1.0
+      "target": "routes_orden_routes_ordenrouter"
     },
     {
       "relation": "imports_from",
@@ -2096,9 +2831,9 @@
       "source_file": "api/src/routes/orden.routes.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routes_orden_routes",
-      "target": "validators_orden_validator",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator"
     },
     {
       "relation": "imports",
@@ -2107,9 +2842,9 @@
       "source_file": "api/src/routes/orden.routes.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routes_orden_routes",
-      "target": "validators_orden_validator_validaractualizarorden",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator_validaractualizarorden"
     },
     {
       "relation": "imports",
@@ -2118,9 +2853,9 @@
       "source_file": "api/src/routes/orden.routes.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routes_orden_routes",
-      "target": "validators_orden_validator_validarcrearorden",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator_validarcrearorden"
     },
     {
       "relation": "contains",
@@ -2128,9 +2863,9 @@
       "source_file": "api/src/server.js",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "src_server_cerrarservidor",
-      "confidence_score": 1.0
+      "target": "src_server_cerrarservidor"
     },
     {
       "relation": "contains",
@@ -2138,9 +2873,9 @@
       "source_file": "api/src/server.js",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_server",
-      "target": "src_server_server",
-      "confidence_score": 1.0
+      "target": "src_server_server"
     },
     {
       "relation": "contains",
@@ -2148,9 +2883,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service",
-      "target": "services_orden_service_ordenservice",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice"
     },
     {
       "relation": "method",
@@ -2158,9 +2893,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice",
-      "target": "services_orden_service_ordenservice_actualizar",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_actualizar"
     },
     {
       "relation": "method",
@@ -2168,9 +2903,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice",
-      "target": "services_orden_service_ordenservice_crear",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_crear"
     },
     {
       "relation": "method",
@@ -2178,9 +2913,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice",
-      "target": "services_orden_service_ordenservice_eliminar",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_eliminar"
     },
     {
       "relation": "method",
@@ -2188,9 +2923,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice",
-      "target": "services_orden_service_ordenservice_listar",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_listar"
     },
     {
       "relation": "method",
@@ -2198,9 +2933,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice",
-      "target": "services_orden_service_ordenservice_obteneresquema",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_obteneresquema"
     },
     {
       "relation": "method",
@@ -2208,9 +2943,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice",
-      "target": "services_orden_service_ordenservice_obtenerporid",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_obtenerporid"
     },
     {
       "relation": "method",
@@ -2218,9 +2953,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice",
-      "target": "services_orden_service_ordenservice_simularpreview",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_simularpreview"
     },
     {
       "relation": "calls",
@@ -2229,9 +2964,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice_actualizar",
-      "target": "services_orden_service_ordenservice_obtenerporid",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_obtenerporid"
     },
     {
       "relation": "calls",
@@ -2240,9 +2975,9 @@
       "source_file": "api/src/services/orden.service.js",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_orden_service_ordenservice_eliminar",
-      "target": "services_orden_service_ordenservice_obtenerporid",
-      "confidence_score": 1.0
+      "target": "services_orden_service_ordenservice_obtenerporid"
     },
     {
       "relation": "contains",
@@ -2250,9 +2985,9 @@
       "source_file": "api/src/validators/orden.validator.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validators_orden_validator",
-      "target": "validators_orden_validator_estados_permitidos",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator_estados_permitidos"
     },
     {
       "relation": "contains",
@@ -2260,9 +2995,9 @@
       "source_file": "api/src/validators/orden.validator.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validators_orden_validator",
-      "target": "validators_orden_validator_prioridades_permitidas",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator_prioridades_permitidas"
     },
     {
       "relation": "contains",
@@ -2270,9 +3005,9 @@
       "source_file": "api/src/validators/orden.validator.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validators_orden_validator",
-      "target": "validators_orden_validator_servicios_permitidos",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator_servicios_permitidos"
     },
     {
       "relation": "contains",
@@ -2280,9 +3015,9 @@
       "source_file": "api/src/validators/orden.validator.js",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validators_orden_validator",
-      "target": "validators_orden_validator_validaractualizarorden",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator_validaractualizarorden"
     },
     {
       "relation": "contains",
@@ -2290,9 +3025,9 @@
       "source_file": "api/src/validators/orden.validator.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validators_orden_validator",
-      "target": "validators_orden_validator_validarcrearorden",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator_validarcrearorden"
     },
     {
       "relation": "contains",
@@ -2300,9 +3035,9 @@
       "source_file": "api/src/validators/orden.validator.js",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validators_orden_validator",
-      "target": "validators_orden_validator_verificarerroresvalidacion",
-      "confidence_score": 1.0
+      "target": "validators_orden_validator_verificarerroresvalidacion"
     },
     {
       "relation": "contains",
@@ -2310,9 +3045,9 @@
       "source_file": "api/test/api.test.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "test_api_test",
-      "target": "test_api_test_withserver",
-      "confidence_score": 1.0
+      "target": "test_api_test_withserver"
     },
     {
       "relation": "contains",
@@ -2320,8 +3055,18 @@
       "source_file": "app.js",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_btnsend",
+      "target": "app_btnsend"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L824",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_cheatsheetinput",
       "confidence_score": 1.0
     },
     {
@@ -2330,9 +3075,9 @@
       "source_file": "app.js",
       "source_location": "L293",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_clearpipeline",
-      "confidence_score": 1.0
+      "target": "app_clearpipeline"
     },
     {
       "relation": "contains",
@@ -2340,9 +3085,9 @@
       "source_file": "app.js",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_completedsteps",
-      "confidence_score": 1.0
+      "target": "app_completedsteps"
     },
     {
       "relation": "contains",
@@ -2350,8 +3095,18 @@
       "source_file": "app.js",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_cookiebadge",
+      "target": "app_cookiebadge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L627",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_currentscaffolddata",
       "confidence_score": 1.0
     },
     {
@@ -2360,9 +3115,9 @@
       "source_file": "app.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_endpointselect",
-      "confidence_score": 1.0
+      "target": "app_endpointselect"
     },
     {
       "relation": "contains",
@@ -2370,9 +3125,9 @@
       "source_file": "app.js",
       "source_location": "L306",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_escapehtml",
-      "confidence_score": 1.0
+      "target": "app_escapehtml"
     },
     {
       "relation": "contains",
@@ -2380,9 +3135,9 @@
       "source_file": "app.js",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_esquema_oms",
-      "confidence_score": 1.0
+      "target": "app_esquema_oms"
     },
     {
       "relation": "contains",
@@ -2390,8 +3145,18 @@
       "source_file": "app.js",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_formattime",
+      "target": "app_formattime"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L635",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_generatestrapifiles",
       "confidence_score": 1.0
     },
     {
@@ -2400,9 +3165,9 @@
       "source_file": "app.js",
       "source_location": "L607",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_glossaryinput",
-      "confidence_score": 1.0
+      "target": "app_glossaryinput"
     },
     {
       "relation": "contains",
@@ -2410,9 +3175,9 @@
       "source_file": "app.js",
       "source_location": "L316",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_highlightjson",
-      "confidence_score": 1.0
+      "target": "app_highlightjson"
     },
     {
       "relation": "contains",
@@ -2420,9 +3185,9 @@
       "source_file": "app.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_initial_orders",
-      "confidence_score": 1.0
+      "target": "app_initial_orders"
     },
     {
       "relation": "contains",
@@ -2430,9 +3195,9 @@
       "source_file": "app.js",
       "source_location": "L301",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_logtrace",
-      "confidence_score": 1.0
+      "target": "app_logtrace"
     },
     {
       "relation": "contains",
@@ -2440,9 +3205,9 @@
       "source_file": "app.js",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_methodselect",
-      "confidence_score": 1.0
+      "target": "app_methodselect"
     },
     {
       "relation": "contains",
@@ -2450,9 +3215,9 @@
       "source_file": "app.js",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_nodes",
-      "confidence_score": 1.0
+      "target": "app_nodes"
     },
     {
       "relation": "contains",
@@ -2460,9 +3225,9 @@
       "source_file": "app.js",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_pausetimer",
-      "confidence_score": 1.0
+      "target": "app_pausetimer"
     },
     {
       "relation": "contains",
@@ -2470,9 +3235,9 @@
       "source_file": "app.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_payloadtextarea",
-      "confidence_score": 1.0
+      "target": "app_payloadtextarea"
     },
     {
       "relation": "contains",
@@ -2480,9 +3245,9 @@
       "source_file": "app.js",
       "source_location": "L220",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_presets",
-      "confidence_score": 1.0
+      "target": "app_presets"
     },
     {
       "relation": "contains",
@@ -2490,9 +3255,9 @@
       "source_file": "app.js",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_progressbar",
-      "confidence_score": 1.0
+      "target": "app_progressbar"
     },
     {
       "relation": "contains",
@@ -2500,8 +3265,18 @@
       "source_file": "app.js",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_progresspercent",
+      "target": "app_progresspercent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L787",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_quizscore",
       "confidence_score": 1.0
     },
     {
@@ -2510,8 +3285,18 @@
       "source_file": "app.js",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_readstorage",
+      "target": "app_readstorage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L750",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_renderscaffoldview",
       "confidence_score": 1.0
     },
     {
@@ -2520,9 +3305,9 @@
       "source_file": "app.js",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_rendertimer",
-      "confidence_score": 1.0
+      "target": "app_rendertimer"
     },
     {
       "relation": "contains",
@@ -2530,9 +3315,9 @@
       "source_file": "app.js",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_responseoutput",
-      "confidence_score": 1.0
+      "target": "app_responseoutput"
     },
     {
       "relation": "contains",
@@ -2540,8 +3325,18 @@
       "source_file": "app.js",
       "source_location": "L648",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_savedcookie",
+      "target": "app_savedcookie"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L618",
+      "weight": 1.0,
+      "source": "app",
+      "target": "app_scaffolderform",
       "confidence_score": 1.0
     },
     {
@@ -2550,9 +3345,9 @@
       "source_file": "app.js",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_showtoast",
-      "confidence_score": 1.0
+      "target": "app_showtoast"
     },
     {
       "relation": "contains",
@@ -2560,9 +3355,9 @@
       "source_file": "app.js",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_starttimer",
-      "confidence_score": 1.0
+      "target": "app_starttimer"
     },
     {
       "relation": "contains",
@@ -2570,9 +3365,9 @@
       "source_file": "app.js",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_statusbadge",
-      "confidence_score": 1.0
+      "target": "app_statusbadge"
     },
     {
       "relation": "contains",
@@ -2580,9 +3375,9 @@
       "source_file": "app.js",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_terminaloutput",
-      "confidence_score": 1.0
+      "target": "app_terminaloutput"
     },
     {
       "relation": "contains",
@@ -2590,9 +3385,9 @@
       "source_file": "app.js",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_timercontainer",
-      "confidence_score": 1.0
+      "target": "app_timercontainer"
     },
     {
       "relation": "contains",
@@ -2600,9 +3395,9 @@
       "source_file": "app.js",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_timerdisplay",
-      "confidence_score": 1.0
+      "target": "app_timerdisplay"
     },
     {
       "relation": "contains",
@@ -2610,9 +3405,9 @@
       "source_file": "app.js",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_timerreset",
-      "confidence_score": 1.0
+      "target": "app_timerreset"
     },
     {
       "relation": "contains",
@@ -2620,9 +3415,9 @@
       "source_file": "app.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_timertoggle",
-      "confidence_score": 1.0
+      "target": "app_timertoggle"
     },
     {
       "relation": "contains",
@@ -2630,9 +3425,9 @@
       "source_file": "app.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_toast",
-      "confidence_score": 1.0
+      "target": "app_toast"
     },
     {
       "relation": "contains",
@@ -2640,9 +3435,9 @@
       "source_file": "app.js",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_updateprogressui",
-      "confidence_score": 1.0
+      "target": "app_updateprogressui"
     },
     {
       "relation": "contains",
@@ -2650,9 +3445,9 @@
       "source_file": "app.js",
       "source_location": "L333",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_wait",
-      "confidence_score": 1.0
+      "target": "app_wait"
     },
     {
       "relation": "contains",
@@ -2660,9 +3455,9 @@
       "source_file": "app.js",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app",
-      "target": "app_writestorage",
-      "confidence_score": 1.0
+      "target": "app_writestorage"
     },
     {
       "relation": "calls",
@@ -2671,9 +3466,9 @@
       "source_file": "app.js",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_rendertimer",
-      "target": "app_formattime",
-      "confidence_score": 1.0
+      "target": "app_formattime"
     },
     {
       "relation": "calls",
@@ -2682,8 +3477,19 @@
       "source_file": "app.js",
       "source_location": "L317",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_highlightjson",
-      "target": "app_escapehtml",
+      "target": "app_escapehtml"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L751",
+      "weight": 1.0,
+      "source": "app_renderscaffoldview",
+      "target": "app_generatestrapifiles",
       "confidence_score": 1.0
     },
     {
@@ -2692,9 +3498,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents",
-      "target": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
-      "confidence_score": 1.0
+      "target": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom"
     },
     {
       "relation": "contains",
@@ -2702,9 +3508,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
-      "target": "agents_1_identidad_y_prop\u00f3sito_del_repositorio",
-      "confidence_score": 1.0
+      "target": "agents_1_identidad_y_prop\u00f3sito_del_repositorio"
     },
     {
       "relation": "contains",
@@ -2712,9 +3518,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
-      "target": "agents_2_consumo_de_memoria_en_obsidian",
-      "confidence_score": 1.0
+      "target": "agents_2_consumo_de_memoria_en_obsidian"
     },
     {
       "relation": "contains",
@@ -2722,9 +3528,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_protocolo_multi_agente_antigravity_codex_claude_oms_web_interactive_example_api_custom",
-      "target": "agents_3_sincronizaci\u00f3n_continua_y_cierre_de_cambios",
-      "confidence_score": 1.0
+      "target": "agents_3_sincronizaci\u00f3n_continua_y_cierre_de_cambios"
     },
     {
       "relation": "contains",
@@ -2732,9 +3538,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude",
-      "target": "claude_directivas_para_claude_code_oms_web_interactive_example_api_custom",
-      "confidence_score": 1.0
+      "target": "claude_directivas_para_claude_code_oms_web_interactive_example_api_custom"
     },
     {
       "relation": "contains",
@@ -2742,9 +3548,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_directivas_para_claude_code_oms_web_interactive_example_api_custom",
-      "target": "claude_comandos_esenciales",
-      "confidence_score": 1.0
+      "target": "claude_comandos_esenciales"
     },
     {
       "relation": "contains",
@@ -2752,9 +3558,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_directivas_para_claude_code_oms_web_interactive_example_api_custom",
-      "target": "claude_reglas_de_arquitectura",
-      "confidence_score": 1.0
+      "target": "claude_reglas_de_arquitectura"
     },
     {
       "relation": "contains",
@@ -2762,9 +3568,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_oms_web_interactive_example_api_custom",
-      "confidence_score": 1.0
+      "target": "readme_oms_web_interactive_example_api_custom"
     },
     {
       "relation": "contains",
@@ -2772,9 +3578,9 @@
       "source_file": "README.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_oms_web_interactive_example_api_custom",
-      "target": "readme_caracter\u00edsticas_de_la_gu\u00eda_interactiva",
-      "confidence_score": 1.0
+      "target": "readme_caracter\u00edsticas_de_la_gu\u00eda_interactiva"
     },
     {
       "relation": "contains",
@@ -2782,9 +3588,9 @@
       "source_file": "README.md",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_oms_web_interactive_example_api_custom",
-      "target": "readme_ciclo_de_vida_de_una_petici\u00f3n_http",
-      "confidence_score": 1.0
+      "target": "readme_ciclo_de_vida_de_una_petici\u00f3n_http"
     },
     {
       "relation": "contains",
@@ -2792,9 +3598,9 @@
       "source_file": "README.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_oms_web_interactive_example_api_custom",
-      "target": "readme_c\u00f3mo_iniciar_la_api_backend",
-      "confidence_score": 1.0
+      "target": "readme_c\u00f3mo_iniciar_la_api_backend"
     },
     {
       "relation": "contains",
@@ -2802,9 +3608,9 @@
       "source_file": "README.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_oms_web_interactive_example_api_custom",
-      "target": "readme_el_por_qu\u00e9_de_los_archivos_y_la_arquitectura",
-      "confidence_score": 1.0
+      "target": "readme_el_por_qu\u00e9_de_los_archivos_y_la_arquitectura"
     },
     {
       "relation": "contains",
@@ -2812,9 +3618,9 @@
       "source_file": "README.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_oms_web_interactive_example_api_custom",
-      "target": "readme_licencia",
-      "confidence_score": 1.0
+      "target": "readme_licencia"
     },
     {
       "relation": "contains",
@@ -2822,9 +3628,9 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_oms_web_interactive_example_api_custom",
-      "target": "readme_qu\u00e9_es_este_proyecto",
-      "confidence_score": 1.0
+      "target": "readme_qu\u00e9_es_este_proyecto"
     },
     {
       "relation": "contains",
@@ -2832,9 +3638,9 @@
       "source_file": "README.md",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_oms_web_interactive_example_api_custom",
-      "target": "readme_ruta_de_aprendizaje_de_30_minutos",
-      "confidence_score": 1.0
+      "target": "readme_ruta_de_aprendizaje_de_30_minutos"
     },
     {
       "relation": "contains",
@@ -2842,9 +3648,9 @@
       "source_file": "README.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_el_por_qu\u00e9_de_los_archivos_y_la_arquitectura",
-      "target": "readme_tabla_de_responsabilidades",
-      "confidence_score": 1.0
+      "target": "readme_tabla_de_responsabilidades"
     },
     {
       "relation": "contains",
@@ -2852,9 +3658,9 @@
       "source_file": "api/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme",
-      "target": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
-      "confidence_score": 1.0
+      "target": "api_readme_api_rest_personalizada_oms_backend_express_enterprise"
     },
     {
       "relation": "contains",
@@ -2862,9 +3668,9 @@
       "source_file": "api/README.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
-      "target": "api_readme_cat\u00e1logo_de_endpoints",
-      "confidence_score": 1.0
+      "target": "api_readme_cat\u00e1logo_de_endpoints"
     },
     {
       "relation": "contains",
@@ -2872,9 +3678,9 @@
       "source_file": "api/README.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
-      "target": "api_readme_ejemplos_curl_para_terminal",
-      "confidence_score": 1.0
+      "target": "api_readme_ejemplos_curl_para_terminal"
     },
     {
       "relation": "contains",
@@ -2882,9 +3688,9 @@
       "source_file": "api/README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
-      "target": "api_readme_inicio_r\u00e1pido_en_3_pasos",
-      "confidence_score": 1.0
+      "target": "api_readme_inicio_r\u00e1pido_en_3_pasos"
     },
     {
       "relation": "contains",
@@ -2892,9 +3698,9 @@
       "source_file": "api/README.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_api_rest_personalizada_oms_backend_express_enterprise",
-      "target": "api_readme_por_qu\u00e9_esta_estructura_clean_architecture_para_apis",
-      "confidence_score": 1.0
+      "target": "api_readme_por_qu\u00e9_esta_estructura_clean_architecture_para_apis"
     },
     {
       "relation": "contains",
@@ -2902,9 +3708,9 @@
       "source_file": "api/README.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_ejemplos_curl_para_terminal",
-      "target": "api_readme_1_consultar_estado_y_versi\u00f3n_semver",
-      "confidence_score": 1.0
+      "target": "api_readme_1_consultar_estado_y_versi\u00f3n_semver"
     },
     {
       "relation": "contains",
@@ -2912,9 +3718,9 @@
       "source_file": "api/README.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_ejemplos_curl_para_terminal",
-      "target": "api_readme_2_introspecci\u00f3n_del_esquema_din\u00e1mico_oms",
-      "confidence_score": 1.0
+      "target": "api_readme_2_introspecci\u00f3n_del_esquema_din\u00e1mico_oms"
     },
     {
       "relation": "contains",
@@ -2922,9 +3728,9 @@
       "source_file": "api/README.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_ejemplos_curl_para_terminal",
-      "target": "api_readme_3_simulaci\u00f3n_previa_dry_run_preview",
-      "confidence_score": 1.0
+      "target": "api_readme_3_simulaci\u00f3n_previa_dry_run_preview"
     },
     {
       "relation": "contains",
@@ -2932,9 +3738,9 @@
       "source_file": "api/README.md",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_ejemplos_curl_para_terminal",
-      "target": "api_readme_4_crear_una_nueva_orden_con_dto_y_cookie",
-      "confidence_score": 1.0
+      "target": "api_readme_4_crear_una_nueva_orden_con_dto_y_cookie"
     },
     {
       "relation": "contains",
@@ -2942,11 +3748,11 @@
       "source_file": "api/README.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_readme_ejemplos_curl_para_terminal",
-      "target": "api_readme_5_intentar_inyectar_campos_no_autorizados_comprobaci\u00f3n_de_dto",
-      "confidence_score": 1.0
+      "target": "api_readme_5_intentar_inyectar_campos_no_autorizados_comprobaci\u00f3n_de_dto"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6f4e6178118498e1c6ecc048345aef3f1aba9de5"
+  "built_at_commit": "4b9414070e11ad770a9a10507f2a993ee9fdf69a"
 }

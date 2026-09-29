@@ -1,16 +1,16 @@
 # Graph Report - oms-web-interactive-example-api-custom  (2026-09-29)
 
 ## Corpus Check
-- 16 files · ~13,034 words
+- 24 files · ~15,862 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 138 nodes · 153 edges · 12 communities (8 shown, 4 thin omitted)
+- 173 nodes · 197 edges · 17 communities (13 shown, 4 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6f4e6178`
+- Built from commit: `4b941407`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -27,18 +27,19 @@
 - [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `OrdenController` - 10 edges
-2. `OrdenModel` - 10 edges
+1. `OrdenModel` - 11 edges
+2. `OrdenController` - 10 edges
 3. `OrdenService` - 9 edges
-4. `🏢 OMS · Web Interactive Example API Custom` - 8 edges
-5. `🧪 Ejemplos cURL para Terminal` - 6 edges
-6. `⚡ API REST Personalizada OMS (Backend Express Enterprise)` - 5 edges
-7. `scripts` - 4 edges
-8. `CrearOrdenDTO` - 4 edges
-9. `ActualizarOrdenDTO` - 4 edges
-10. `Protocolo Multi-Agente (Antigravity, Codex & Claude) - oms-web-interactive-example-api-custom` - 4 edges
+4. `getCustomService()` - 8 edges
+5. `handleControllerError()` - 8 edges
+6. `🏢 OMS · Web Interactive Example API Custom` - 8 edges
+7. `🧪 Ejemplos cURL para Terminal` - 6 edges
+8. `⚡ API REST Personalizada OMS (Backend Express Enterprise)` - 5 edges
+9. `scripts` - 4 edges
+10. `getPayload()` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -46,22 +47,22 @@
 ## Import Cycles
 - None detected.
 
-## Communities (12 total, 4 thin omitted)
+## Communities (17 total, 4 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (22): btnSend, completedSteps, cookieBadge, endpointSelect, ESQUEMA_OMS, glossaryInput, INITIAL_ORDERS, methodSelect (+14 more)
+Cohesion: 0.05
+Nodes (32): btnSend, cheatsheetInput, completedSteps, cookieBadge, currentScaffoldData, endpointSelect, escapeHtml(), ESQUEMA_OMS (+24 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.14
-Nodes (5): ActualizarOrdenDTO, CrearOrdenDTO, ESQUEMA_ORDEN, ordenesDb, OrdenModel
+Cohesion: 0.13
+Nodes (6): ESQUEMA_ORDEN, ordenesDb, OrdenModel, delete(), findOne(), update()
 
 ### Community 2 - "Community 2"
 Cohesion: 0.11
 Nodes (17): author, dependencies, cookie-parser, cors, express, express-validator, description, keywords (+9 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.16
+Cohesion: 0.15
 Nodes (10): manejarError(), rutaNoEncontrada(), ordenRouter, app, server, ESTADOS_PERMITIDOS, PRIORIDADES_PERMITIDAS, SERVICIOS_PERMITIDOS (+2 more)
 
 ### Community 4 - "Community 4"
@@ -80,23 +81,29 @@ Nodes (4): 1. Identidad y Propósito del Repositorio, 2. Consumo de Memoria en O
 Cohesion: 0.50
 Nodes (3): Comandos Esenciales, Directivas para Claude Code - oms-web-interactive-example-api-custom, Reglas de Arquitectura
 
+### Community 10 - "Community 10"
+Cohesion: 0.42
+Nodes (10): create(), delete(), findOne(), getCustomService(), getPayload(), handleControllerError(), list(), preview() (+2 more)
+
 ## Knowledge Gaps
-- **63 isolated node(s):** `name`, `version`, `description`, `main`, `type` (+58 more)
+- **67 isolated node(s):** `name`, `version`, `description`, `main`, `type` (+62 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `OrdenController` connect `Community 6` to `Community 1`, `Community 3`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
-- **Why does `OrdenService` connect `Community 7` to `Community 1`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
+- **Why does `OrdenModel` connect `Community 1` to `Community 3`, `Community 7`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+- **Why does `OrdenController` connect `Community 6` to `Community 3`, `Community 7`?**
+  _High betweenness centrality (0.028) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `description` to the rest of the system?**
-  _63 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _67 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.0625 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05110336817653891 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.14210526315789473 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1286549707602339 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.14619883040935672 - nodes in this community are weakly interconnected._
