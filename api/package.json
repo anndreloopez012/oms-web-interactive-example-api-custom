@@ -1,0 +1,30 @@
+{
+  "name": "oms-custom-api-example",
+  "version": "1.0.0",
+  "description": "API REST personalizada estilo OMS para arquitectura enterprise con Node.js, Express, DTOs y validaciones",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test test/api.test.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "oms",
+    "rest-api",
+    "dto",
+    "clean-architecture",
+    "semver",
+    "express-validator"
+  ],
+  "author": "Andre Lopez & OMS Team",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0"
+  }
+}
