@@ -1,6 +1,6 @@
 # Protocolo Multi-Agente (Antigravity, Codex & Claude) - oms-web-interactive-example-api-custom
 
-Este repositorio colabora en conjunto con Antigravity, Codex y Claude Code utilizando el Obsidian Vault local (`/Users/macbookpro/Documents/Obsidian Vault`) y Graphify como fuente compartida de verdad.
+Este repositorio colabora en conjunto con Antigravity, Codex y Claude Code utilizando el Obsidian Vault local (`/Users/macbookpro/Documents/OBSIDIAN`) y Graphify como fuente compartida de verdad.
 
 ---
 
@@ -42,7 +42,7 @@ Al realizar cambios en el código:
    ```
 4. Exportar y sincronizar con Obsidian:
    ```bash
-   graphify export obsidian --dir "$HOME/Documents/Obsidian Vault/Memoria/Graphify/oms-web-interactive-example-api-custom"
+   graphify export obsidian --dir "$HOME/Documents/OBSIDIAN/PROGRAMACION/Graphify/oms-web-interactive-example-api-custom"
    ```
 5. Refrescar índices:
    ```bash
