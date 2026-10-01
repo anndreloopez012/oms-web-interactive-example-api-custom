@@ -5,7 +5,7 @@
 - Iniciar servidor en desarrollo: `cd api && npm run dev`
 - Iniciar servidor en producción: `cd api && npm start`
 - Actualizar grafo de dependencias: `graphify update .`
-- Exportar a Obsidian: `graphify export obsidian --dir "$HOME/Documents/Obsidian Vault/Memoria/Graphify/oms-web-interactive-example-api-custom"`
+- Exportar a Obsidian: `graphify export obsidian --dir "$HOME/Documents/OBSIDIAN/PROGRAMACION/Graphify/oms-web-interactive-example-api-custom"`
 - Refrescar memoria general: `memoria refresh`
 
 ## Reglas de Arquitectura
